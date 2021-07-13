@@ -1,0 +1,34 @@
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.image {
+	background-image:linear-gradient(rgba(0,0,0,0.5)),url("bg.gif");
+    height: 100%;
+    width: 100%;
+	/* background-position:center center ; */
+    position: fixed;	
+    z-index: -1;
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+}
+
+.form-label {
+    color:violet;
+    font-weight: 900;
+}
+
+h2 {
+    color: whitesmoke;
+}
+
+/* audio { display:none;} */

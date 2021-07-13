@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <title>Index</title>
+</head>
+<body class= "">
+    <img src="/static/img/bg.gif" class="image" alt="">
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid ">
+        <span class="navbar-brand mb-0 h1 text-center">Welcome To The Game Page!</span>
+        </div>
+    </nav>
+    <div class="card text-center bg-warning bg-gradient">
+        <div class="card-body">
+            <h5 class="card-title">Login and Registration</h5>
+            <p class="card-text">Register or login to start playing </p>
+            <audio id="myaudio" loop autoplay="true">
+                <!-- <source src="static/img/rain.ogg" type="audio/ogg"> -->
+                <source src="https://bigsoundbank.com/UPLOAD/mp3/0001.mp3" >
+            </audio> 
+            <button onclick="setMutedVolume()" type="button">Set volume to 0.0</button>
+            <button onclick="setFullVolume()" type="button">Set volume to 1.0</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="d-flex justify-content-center justify-content-between p-5 ">
+            <div>
+                <h2>Registeration</h2>
+                <form action="/user/create" method="post">
+                    <div class="mb-3">
+                        <label for="first_name" class="form-label">First Name</label>
+                        <input type="text" class="form-control" name="first_name" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="last_name" class="form-label">Last Name</label>
+                        <input type="text" class="form-control" name="last_name" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email </label>
+                        <input type="text" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="pw" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="confirm_pw" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" name="confirm_pw" id="exampleInputPassword1">
+                    </div>
+                    <div class="float-end">
+                        <button type="submit" class="btn btn-warning">Submit</button>
+                    </div>   
+                </form>
+            </div>
+            <div class="errors text-red">
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        {% for msg in messages %}
+                            <p>{{msg}}</p>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            </div>
+            <div>
+                <h2>Login</h2>
+                <form action="/user/login" method="post">
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email </label>
+                        <input type="text" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="pw" id="exampleInputPassword1">
+                    </div>
+                    <div class="float-end">
+                        <button type="submit" class="btn btn-warning">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Check to see if page is still loading.
+if (document.readyState == 'loading') { 
+    // Still loading, so add an event listener to wait for it to finish.
+    document.addEventListener('DOMContentLoaded', setFullVolume ); 
+} else { 
+    // DOM is already ready, so run the program! 
+    setFullVolume() ; 
+}
+        var audio = document.getElementById("myaudio");
+            function setFullVolume() { 
+                audio.volume = 1.0;
+                console.log(audio.volume)
+            } 
+            function setMutedVolume() { 
+                
+                audio.volume = 0.0;
+                console.log(audio.volume)
+            } 
+    </script> 
+</body>
+</html>
+        

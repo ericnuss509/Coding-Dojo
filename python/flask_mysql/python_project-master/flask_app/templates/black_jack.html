@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <title>Black Jack</title>
+</head>
+<body>
+    {% for card in game.player.hand %}
+        <p>
+            {{card.title}}
+        </p>
+
+    {% endfor %}
+    <p id="game-info" info='{{game}}'>{{game.player.hand}}</p>
+    <div class="container-card">
+        <div class="top-container">
+            <div class="left">
+                {% with messages = get_flashed_messages() %}
+                    {% if messages %}
+                        {% for msg in messages %}
+                            <p class="text-red" >{{msg}}</p>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
+            </div>
+            <div class="right">
+
+            </div>
+        </div>
+        <div class="bottom-container">
+            <div class="bottom-left">
+
+            </div>
+            <div class="bottom-right">
+
+            </div>
+        </div>
+        <a href="/deal">Deal</a>
+        <a href="/hit">Hit</a>
+        <a href="/stay">Stay</a>
+
+        <div>
+            <a href="/dashboard"><button class=" float-start btn-lg btn-outline-danger mb-3"
+                    type="submit">Dashboard</button></a>
+        </div>
+    </div>
+    <script type="text/javascript" src="/static/js/blackjack.js"></script> 
+</body>
+</html>

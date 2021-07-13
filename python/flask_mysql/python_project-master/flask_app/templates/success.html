@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    <title>Success page</title>
+</head>
+
+<body>
+    <img src="/static/img/bg1.gif" class="image" alt="">
+    <div class="card text-center bg-success ">
+        <div class="card-body  d-inline ">
+            <h5 class="card-title">Welcome {{session['name']}}</h5>
+        </div>
+        <div>
+            <a href="/user/logout"><button class="float-end btn-lg btn-outline-danger" type="submit">Log out</button></a>
+        </div>
+    </div>
+    <div class="mx-5 p-5 mb-3" style="width: 500px;">
+        <table class="table table-success table-striped table-hover table-bordered ">
+            <thead>
+                <tr>
+                    <th>Games</th>
+                    <th class="button-center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Pacman
+                        <img src="/static/img/pacman.gif" alt="">
+                    </td>
+                    <td class="button-center"><button class="btn btn-success btn-secondary btn-lg  "><a href="/view/pacman">Play</a></button></td>
+                </tr>
+                <tr>
+                    <td>Cards
+                        <img class="img-card" src="/static/img/cards3.gif" alt="">
+                    </td>
+                    <td class="button-center"><button class="btn btn-success btn-secondary btn-lg"><a href="/show">Play</a></button></td>
+                </tr>
+                <tr>
+                    <td>Checkers
+                        <img class="img-card" src="/static/img/checker.gif" alt="">
+                    </td>
+                    <td class="button-center"><button class="btn btn-success btn-secondary btn-lg"><a href="">Play</a></button></td>
+                </tr>
+                <tr>
+                    <td>Mario Brothers
+                        <img class="img-card" src="/static/img/mario.gif" alt="">
+                    </td>
+                    <td class="button-center"><button class="btn btn-success btn-secondary btn-lg "><a href="">Play</a></button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.image {
+	background-image:linear-gradient(rgba(0,0,0,0.5)),url("bg.gif");
+    height: 100%;
+    width: 100%;
+	/* background-position:center center ; */
+    position: fixed;	
+    z-index: -1;
+    background-repeat: no-repeat ;
+    background-attachment: fixed;
+}
+
+.form-label {
+    color:violet;
+    font-weight: 900;
+}
+
+h2 {
+    color: whitesmoke;
+}
+
+.text-red {
+    color: red;
+}
+/* audio { display:none;} */
+
+.large-btn {
+    margin-top: -5;
+}
+.img-card {
+    width: 25px;
+    height: 25px;;
+}
+
+a:link {
+    text-decoration: none;
+    
+}
+a {
+    color: #fff;
+}
+.button-center {
+    text-align: center;
+}
+
+.pacman-img {
+    width: 200px;
+    height: 300px;
+}
+
+#world {
+    padding: 30px;
+}
+
+.button {
+    display: inline-block;
+}
+
+.wall {
+    width: 50px;
+    height: 50px;
+    background-image: url('/static/img/wall.png');
+    display: inline-block;
+}
+
+.coin {
+    width: 50px;
+    height: 50px;
+    background-image: url('/static/img/coin.png');
+    display: inline-block;
+}
+
+.ground {
+    width: 50px;
+    height: 50px;
+    background-image: url('/static/img/bg.png');
+    display: inline-block;
+}
+
+.ghost {
+    width: 50px;
+    height: 50px;
+    background-image: url('/static/img/ghost1.png');
+    display: inline-block;
+}
+
+.pacman {
+    width: 50px;
+    height: 50px;
+    background-image: url('/static/img/pacman1.png');
+    display: inline-block;
+}
+ 
+/* 
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    width: 1000px;
+    height: 1000px;
+    border: solid black;
+}
+  
+.grid div {
+    width: 50px;
+    height: 50px;
+}
+
+.pac-dot {
+    background-color: green;   
+    border: 5px solid white;
+    box-sizing: border-box;
+}
+
+.wall {
+    background-image: url('/static/img/wall.png');
+}
+
+.power-pellet {
+    background-image: url('/static/img/coin.png');
+    border-radius: 10px;
+}
+
+.blinky {
+    background-image: url('/static/img/ghost1.png');
+}
+
+.pinky {
+    background-color: pink;
+}
+
+.inky {
+    background-color: cyan;
+}
+
+.clyde {
+    background-color: orange;     
+}
+
+.pac-man {
+    background-color: yellow;
+    border-radius: 10px;
+}
+
+.scared-ghost {
+    background-color: aquamarine;
+} */

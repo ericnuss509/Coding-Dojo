@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Checker Board with Changing Height</h1>
+    <table>
+        {% for i in range(height): %}
+        <tr>
+            {% for x in range(4): %}
+            <td>
+                <div style= "background-color: aquamarine; height: 50px; width: 50px;"></div>
+            </td>
+            <td>
+                <div style= "background-color: rgb(230, 170, 188); height: 50px; width: 50px;"></div>
+            </td>
+            {% endfor %}
+        </tr>
+        <tr>
+            {% for z in range (4)%}
+            <td>
+                <div style= "background-color: rgb(230, 170, 188); height: 50px; width: 50px;"></div>
+            </td>
+            <td>
+                <div style= "background-color: aquamarine; height: 50px; width: 50px;"></div>
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
