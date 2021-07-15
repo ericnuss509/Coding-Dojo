@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+input[type=submit]{
+  background-color: aquamarine;
+  color: coral;
+  width: 400px;
+  margin-top: 50px;
+  height: 300px;
+  font-size: xx-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
