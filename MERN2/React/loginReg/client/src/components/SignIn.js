@@ -1,5 +1,6 @@
 import React from 'react';
-import Register from './Register'
+import Register from './Register';
+import Login from './Login'; 
 
 
 const SignIn = () => {
@@ -9,7 +10,7 @@ const SignIn = () => {
                 <Register></Register>
             </div>
             <div className="col">
-                <h3>Login form goes here later</h3>
+                <Login></Login>
             </div>
         </div>
     );
