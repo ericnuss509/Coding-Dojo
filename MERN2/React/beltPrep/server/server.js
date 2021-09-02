@@ -6,7 +6,7 @@ const port = 5000;
 const db_name="belt-prep";
 
 // Immediately execute the import mongoose.config.js function.
-require("../config/mongoose.config")(db_name);
+require("./config/mongoose.config")(db_name);
 
 const app = express();
 
@@ -14,7 +14,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-require("../routes/post.routes")(app);
+require("./routes/post.routes")(app);
 
 app.listen(port, () =>
     console.log(`Listening on port ${port} for REQuests to RESpond to.`)
