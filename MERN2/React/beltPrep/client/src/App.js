@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import {Link, Redirect, link, Router } from "@reach/router";
+import NotFound from "./views/NotFound";
+import Post from "./views/Post";
+import Posts from "./views/Posts";
+import NewPost from "./views/NewPost";
+import EditPost from "./views/EditPost";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div style={{ textAlign: "center", width: "80%", margin: "0 auto"}}>
+      <header >
+        <nav>
+          <Link to="/posts">All Posts</Link> | {" "}
+          <Link to="/posts/new">New Post</Link>
+        </nav>
       </header>
+      <Router>
+        <Post path="/posts/:id"/>
+        <Posts path="/posts" />
+        <EditPost path="/posts/:id/edit" />
+        <NewPost path="posts/new" />
+        <Redirect from="/" to="posts" noThrow="true" />
+        <NotFound default />
+      </Router>
     </div>
   );
 }
