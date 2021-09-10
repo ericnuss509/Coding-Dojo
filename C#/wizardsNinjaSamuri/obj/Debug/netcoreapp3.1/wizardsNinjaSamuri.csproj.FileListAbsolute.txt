@@ -1,0 +1,12 @@
+/Users/ericnuss/Documents/C#/wizardsNinjaSamuri/obj/Debug/netcoreapp3.1/wizardsNinjaSamuri.csprojAssemblyReference.cache
+/Users/ericnuss/Documents/C#/wizardsNinjaSamuri/obj/Debug/netcoreapp3.1/wizardsNinjaSamuri.AssemblyInfoInputs.cache
+/Users/ericnuss/Documents/C#/wizardsNinjaSamuri/obj/Debug/netcoreapp3.1/wizardsNinjaSamuri.AssemblyInfo.cs
+/Users/ericnuss/Documents/C#/wizardsNinjaSamuri/obj/Debug/netcoreapp3.1/wizardsNinjaSamuri.csproj.CoreCompileInputs.cache
+/Users/ericnuss/Documents/C#/wizardsNinjaSamuri/bin/Debug/netcoreapp3.1/wizardsNinjaSamuri.deps.json
+/Users/ericnuss/Documents/C#/wizardsNinjaSamuri/bin/Debug/netcoreapp3.1/wizardsNinjaSamuri.runtimeconfig.json
+/Users/ericnuss/Documents/C#/wizardsNinjaSamuri/bin/Debug/netcoreapp3.1/wizardsNinjaSamuri.runtimeconfig.dev.json
+/Users/ericnuss/Documents/C#/wizardsNinjaSamuri/bin/Debug/netcoreapp3.1/wizardsNinjaSamuri.dll
+/Users/ericnuss/Documents/C#/wizardsNinjaSamuri/bin/Debug/netcoreapp3.1/wizardsNinjaSamuri.pdb
+/Users/ericnuss/Documents/C#/wizardsNinjaSamuri/obj/Debug/netcoreapp3.1/wizardsNinjaSamuri.dll
+/Users/ericnuss/Documents/C#/wizardsNinjaSamuri/obj/Debug/netcoreapp3.1/wizardsNinjaSamuri.pdb
+/Users/ericnuss/Documents/C#/wizardsNinjaSamuri/obj/Debug/netcoreapp3.1/wizardsNinjaSamuri.genruntimeconfig.cache

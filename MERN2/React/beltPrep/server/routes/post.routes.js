@@ -11,5 +11,4 @@ module.exports = (app) => {
     app.get("/api/posts/:id", postController.getOne);
     app.delete("/api/posts/:id", postController.delete);
     app.put("/api/posts/:id", postController.update);
-    // app.post("/api/posts/many", postController.createMany);
 };

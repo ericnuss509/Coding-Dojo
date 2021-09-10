@@ -1,0 +1,26 @@
+﻿@model User
+<H1>Enter your information</H1>
+<form asp-action="Create" asp-controller="Home" method="post">
+    
+    <label asp-for="FirstName"></label>
+    <input asp-for="FirstName">    
+    <span asp-validation-for="FirstName" class="text-danger" ></span>
+    
+    <label asp-for="LastName"></label>
+    <input asp-for="LastName"> 
+    <span asp-validation-for="LastName" class="text-danger"></span> 
+    
+    <label asp-for="Age"></label>
+    <input asp-for="Age"> 
+    <span asp-validation-for="Age" class="text-danger"></span> 
+    
+    <label asp-for="Email"></label>
+    <input asp-for="Email">
+    <span asp-validation-for="Email" class="text-danger"></span>
+    
+    <label asp-for="Password"></label>
+    <input asp-for="Password">
+    <span asp-validation-for="Password" class="text-danger"></span>
+    
+    <input value="Add User" type="submit">    
+</form>

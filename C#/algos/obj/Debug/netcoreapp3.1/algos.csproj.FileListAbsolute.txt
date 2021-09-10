@@ -1,0 +1,4 @@
+/Users/ericnuss/Documents/C#/algos/obj/Debug/netcoreapp3.1/algos.csprojAssemblyReference.cache
+/Users/ericnuss/Documents/C#/algos/obj/Debug/netcoreapp3.1/algos.AssemblyInfoInputs.cache
+/Users/ericnuss/Documents/C#/algos/obj/Debug/netcoreapp3.1/algos.AssemblyInfo.cs
+/Users/ericnuss/Documents/C#/algos/obj/Debug/netcoreapp3.1/algos.csproj.CoreCompileInputs.cache

@@ -1,0 +1,11 @@
+﻿@model Dish
+
+<h1>Welcome to CRUDelicious</h1>
+<h2>Here is a list of dishes</h2>
+
+    @foreach (var item in ViewBag.dishes)
+    {
+        <p><a href="/details/@item.DishId">@item.Name</a> by @item.Chef</p>
+    }
+
+<h3><a href="/newdish">Add a new Dish</a></h3>

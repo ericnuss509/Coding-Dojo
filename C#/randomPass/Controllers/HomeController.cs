@@ -1,0 +1,44 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using randomPass.Models;
+using Microsoft.AspNetCore.Http;
+
+namespace randomPass.Controllers
+{
+    public class HomeController : Controller
+    {
+        private readonly ILogger<HomeController> _logger;
+
+        public HomeController(ILogger<HomeController> logger)
+        {
+            _logger = logger;
+        }
+
+
+        [HttpGet("")]
+        public IActionResult Index()
+        {
+            return View();
+        }
+
+// Create a new project that shows a random string of length 14, 
+// containing numerals and capitalized letters. Upon opening this app, it should 
+// say 'Random Passcode (passcode #1)'. Each time you generate a new random password, 
+// it should update the number inside passcode #___.
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        public IActionResult Error()
+        {
+            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+    }
+}

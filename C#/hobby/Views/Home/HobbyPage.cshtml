@@ -1,0 +1,16 @@
+
+
+@{
+    Hobby hobby = ViewBag.Hobby;
+}
+
+<span><p>Hi @ViewBag.User.FirstName!</p></span>
+<a asp-action="Dashboard">Dashboard</a> |
+<a asp-action="Logout" asp-controller="User">Log Out</a>
+
+<p> @ViewBag.Hobby.HobbyName</p>
+
+<p> @ViewBag.Movie.PostedBy.FirstName</p>
+
+
+

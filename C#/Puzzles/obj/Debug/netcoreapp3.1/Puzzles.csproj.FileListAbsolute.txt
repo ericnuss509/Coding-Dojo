@@ -1,0 +1,12 @@
+/Users/ericnuss/Documents/C#/Puzzles/obj/Debug/netcoreapp3.1/Puzzles.csprojAssemblyReference.cache
+/Users/ericnuss/Documents/C#/Puzzles/obj/Debug/netcoreapp3.1/Puzzles.AssemblyInfoInputs.cache
+/Users/ericnuss/Documents/C#/Puzzles/obj/Debug/netcoreapp3.1/Puzzles.AssemblyInfo.cs
+/Users/ericnuss/Documents/C#/Puzzles/obj/Debug/netcoreapp3.1/Puzzles.csproj.CoreCompileInputs.cache
+/Users/ericnuss/Documents/C#/Puzzles/bin/Debug/netcoreapp3.1/Puzzles.deps.json
+/Users/ericnuss/Documents/C#/Puzzles/bin/Debug/netcoreapp3.1/Puzzles.runtimeconfig.json
+/Users/ericnuss/Documents/C#/Puzzles/bin/Debug/netcoreapp3.1/Puzzles.runtimeconfig.dev.json
+/Users/ericnuss/Documents/C#/Puzzles/bin/Debug/netcoreapp3.1/Puzzles.dll
+/Users/ericnuss/Documents/C#/Puzzles/bin/Debug/netcoreapp3.1/Puzzles.pdb
+/Users/ericnuss/Documents/C#/Puzzles/obj/Debug/netcoreapp3.1/Puzzles.dll
+/Users/ericnuss/Documents/C#/Puzzles/obj/Debug/netcoreapp3.1/Puzzles.pdb
+/Users/ericnuss/Documents/C#/Puzzles/obj/Debug/netcoreapp3.1/Puzzles.genruntimeconfig.cache

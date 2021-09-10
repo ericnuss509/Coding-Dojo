@@ -1,0 +1,15 @@
+<<h1>@ViewBag.User.FirstName, welcome to the dashboard</h1>
+    <br>
+    <form asp-action="Logout" method="get">
+        @* no new information needed to be passed *@
+        <button type="submit">Logout</button>
+    </form>
+    <form asp-action="Create" method="get"> 
+        @* get me a web page !!!!!! dont forget *@
+        <button type="submit">Create</button>
+    </form>
+    @foreach(var item in @ViewBag.allHobbies)
+    {
+        <a href="hobby/@item.HobbyId">@item.Name</a>
+    }
+   

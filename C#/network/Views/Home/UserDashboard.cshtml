@@ -1,0 +1,54 @@
+<h1>@ViewBag.User.FirstName, welcome to the dashboard</h1>
+<h3>Here is your profile descrtiption:</h3>
+<p>@ViewBag.User.Description</p>
+<h3>Your Professional Network:</h3>
+<p>@ViewBag.pro</p>
+<h3>Invitations:</h3>
+<h5>The following people asked you to be their network:</h5>
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+            @* @foreach() *@
+            
+        
+        <tr>
+            <td><a asp-action="" asp-route-id=""></a></td>
+            <td></td>
+            <td></td>
+           
+                @* @if(movie.PostedBy.UserId == ViewBag.User.UserId)
+                    {
+                    <form asp-action="Accept" method="post" asp-route-id="@UserProfession.UserProfessionId">
+                        <button>Delete</button>
+                    </form>
+                    }
+                    else if (movie.Likes.Any(like => like.UserId == ViewBag.User.UserId))
+                    {
+                    <form asp-action="RemoveLikeFromMovie">
+                        <input type="hidden" name="MovieId" value="@movie.MovieId">
+                        <button>Unlike</button>
+                    </form>
+                    }
+                    else
+                    {
+                <form asp-action="AddLikeToMovie" asp-route-id="@movie.MovieId" method="post">
+                <button>Like</button> *@
+               
+                
+            
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+
+
+<form asp-action="Logout" method="get">
+    <button type="submit">Logout</button>
+</form>

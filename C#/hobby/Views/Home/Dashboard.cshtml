@@ -1,0 +1,25 @@
+<p>Hi @ViewBag.User.FirstName!</p>
+<h1>Hobbies</h1>
+
+
+@* <a asp-action="Logout" asp-controller="User">Log Out</a> *@
+
+<a asp-action="CreateAHobby">Create a Hobby </a>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Enthusiasts</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Hobby hobby in ViewBag.AllHobby)
+        {
+
+            <td><a asp-action="CreateAHobby" asp-route-id="@hobby.HobbyId">@hobby.Description</a></td>
+            <td>@hobby.HobbyName</td>
+            <td>@hobby.Description</td>
+            <td>@hobby.PostedBy.FirstName</td>
+        }
+

@@ -1,0 +1,32 @@
+<h1> Add a new hobby to the List</h1>
+@model Hobby
+<form asp-action="AddCreatedHobby" method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control">
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <input asp-for="Description" class="form-control">
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <input asp-for="UserId" type="hidden" value="@ViewBag.User">
+    <button type="submit">Add</button>
+</form>
+
+
+<form asp-action="Logout" method="get">
+    <button type="submit">Logout</button>
+</form>
+
+
+@foreach (Hobby item in ViewBag.allHobbies)
+{
+    <a href="hobby/@item.HobbyId">@item.Name</a>
+}
+
+
+            

@@ -1,0 +1,45 @@
+<h1>@ViewBag.Movie.Title</h1>
+
+@{
+    Movie movie = ViewBag.Movie;
+}
+
+<span><p>Hi @ViewBag.User.FirstName!</p></span>
+<a asp-action="Dashboard">Dashboard</a> |
+<a asp-action="Logout" asp-controller="User">Log Out</a>
+
+<p>Starring @ViewBag.Movie.Star</p>
+<p>Released @ViewBag.Movie.ReleaseDate.ToString("M/d/yyyy")</p>
+<p>PostedBy: @ViewBag.Movie.PostedBy.FirstName</p>
+
+<h2>Fans</h2>
+<ul>
+    @foreach (Like like in @ViewBag.Movie.Likes)
+    {
+        <li>@like.UserWhoLikes.FirstName</li>
+    }
+
+</ul>
+
+
+<img src="@ViewBag.Movie.ImageUrl" alt="@ViewBag.Movie.Title">
+
+@if (movie.PostedBy.UserId == ViewBag.User.UserId)
+{
+    <form asp-action="DeleteMovie" method="post" asp-route-id="@movie.MovieId">
+    <button>Delete</button>
+</form>
+}
+else if (movie.Likes.Any(like => like.UserId == ViewBag.User.UserId))
+{
+    <form asp-action="RemoveLikeFromMovie">
+    <input type="hidden" name="MovieId" value="@movie.MovieId">
+    <button>Unlike</button>
+</form>
+}
+else
+{
+    <form asp-action="AddLikeToMovie" asp-route-id="@movie.MovieId" method="post">
+    <button>Like</button>
+</form>
+}

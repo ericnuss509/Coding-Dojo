@@ -1,0 +1,12 @@
+/Users/ericnuss/Documents/C#/MyFirstDotnet/obj/Debug/netcoreapp3.1/MyFirstDotnet.csprojAssemblyReference.cache
+/Users/ericnuss/Documents/C#/MyFirstDotnet/obj/Debug/netcoreapp3.1/MyFirstDotnet.AssemblyInfoInputs.cache
+/Users/ericnuss/Documents/C#/MyFirstDotnet/obj/Debug/netcoreapp3.1/MyFirstDotnet.AssemblyInfo.cs
+/Users/ericnuss/Documents/C#/MyFirstDotnet/obj/Debug/netcoreapp3.1/MyFirstDotnet.csproj.CoreCompileInputs.cache
+/Users/ericnuss/Documents/C#/MyFirstDotnet/bin/Debug/netcoreapp3.1/MyFirstDotnet.deps.json
+/Users/ericnuss/Documents/C#/MyFirstDotnet/bin/Debug/netcoreapp3.1/MyFirstDotnet.runtimeconfig.json
+/Users/ericnuss/Documents/C#/MyFirstDotnet/bin/Debug/netcoreapp3.1/MyFirstDotnet.runtimeconfig.dev.json
+/Users/ericnuss/Documents/C#/MyFirstDotnet/bin/Debug/netcoreapp3.1/MyFirstDotnet.dll
+/Users/ericnuss/Documents/C#/MyFirstDotnet/bin/Debug/netcoreapp3.1/MyFirstDotnet.pdb
+/Users/ericnuss/Documents/C#/MyFirstDotnet/obj/Debug/netcoreapp3.1/MyFirstDotnet.dll
+/Users/ericnuss/Documents/C#/MyFirstDotnet/obj/Debug/netcoreapp3.1/MyFirstDotnet.pdb
+/Users/ericnuss/Documents/C#/MyFirstDotnet/obj/Debug/netcoreapp3.1/MyFirstDotnet.genruntimeconfig.cache

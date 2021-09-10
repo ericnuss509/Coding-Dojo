@@ -1,0 +1,4 @@
+/Users/ericnuss/Documents/C#/deckOfCards/obj/Debug/netcoreapp3.1/deckOfCards.csprojAssemblyReference.cache
+/Users/ericnuss/Documents/C#/deckOfCards/obj/Debug/netcoreapp3.1/deckOfCards.AssemblyInfoInputs.cache
+/Users/ericnuss/Documents/C#/deckOfCards/obj/Debug/netcoreapp3.1/deckOfCards.AssemblyInfo.cs
+/Users/ericnuss/Documents/C#/deckOfCards/obj/Debug/netcoreapp3.1/deckOfCards.csproj.CoreCompileInputs.cache

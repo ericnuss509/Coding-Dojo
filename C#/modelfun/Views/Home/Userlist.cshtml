@@ -1,0 +1,8 @@
+@using modelfun.Models
+@model List<Person>
+
+@foreach(var persons in Model)
+{
+    <p>@persons.FirstName @persons.LastName</p>
+    
+}

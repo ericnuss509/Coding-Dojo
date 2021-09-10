@@ -1,0 +1,12 @@
+/Users/ericnuss/Documents/C#/human/obj/Debug/netcoreapp3.1/human.csprojAssemblyReference.cache
+/Users/ericnuss/Documents/C#/human/obj/Debug/netcoreapp3.1/human.AssemblyInfoInputs.cache
+/Users/ericnuss/Documents/C#/human/obj/Debug/netcoreapp3.1/human.AssemblyInfo.cs
+/Users/ericnuss/Documents/C#/human/obj/Debug/netcoreapp3.1/human.csproj.CoreCompileInputs.cache
+/Users/ericnuss/Documents/C#/human/bin/Debug/netcoreapp3.1/human.deps.json
+/Users/ericnuss/Documents/C#/human/bin/Debug/netcoreapp3.1/human.runtimeconfig.json
+/Users/ericnuss/Documents/C#/human/bin/Debug/netcoreapp3.1/human.runtimeconfig.dev.json
+/Users/ericnuss/Documents/C#/human/bin/Debug/netcoreapp3.1/human.dll
+/Users/ericnuss/Documents/C#/human/bin/Debug/netcoreapp3.1/human.pdb
+/Users/ericnuss/Documents/C#/human/obj/Debug/netcoreapp3.1/human.dll
+/Users/ericnuss/Documents/C#/human/obj/Debug/netcoreapp3.1/human.pdb
+/Users/ericnuss/Documents/C#/human/obj/Debug/netcoreapp3.1/human.genruntimeconfig.cache

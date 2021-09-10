@@ -1,0 +1,17 @@
+@model Hobby
+<h1>@Model.Name</h1>
+<p>@Model.Description</p>
+<form asp-action="Enthuse" method="post">
+    <input type="hidden" value="@ViewBag.User.UserId" name="UserId">
+    <input type="hidden" value="@Model.HobbyId" name="HobbyId">
+    <button type="submit">Enthuse</button>
+</form>
+
+@foreach (var item in @Model.Enthusists)
+{
+    <p>@item.UserWhoLikes.FirstName</p>
+    
+}
+<p>@Model.Enthusists.Count</p>
+
+

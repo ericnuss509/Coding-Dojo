@@ -1,0 +1,28 @@
+@model List<Hobby>
+
+
+<table>
+    <thead>
+        <th>
+            Hobby
+        </th>
+        <th>
+            Enthusists
+        </th>
+    </thead>
+    <tbody>
+       @foreach(var hobby in @Model)
+       {
+           <tr>
+           <td>
+               @hobby.Name
+            
+           </td>
+           <td>
+               @hobby.Enthusists.Count
+           </td>
+       </tr>
+       }
+       
+    </tbody>
+</table>

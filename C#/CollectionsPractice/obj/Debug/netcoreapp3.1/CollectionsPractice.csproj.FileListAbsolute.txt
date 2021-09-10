@@ -1,0 +1,12 @@
+/Users/ericnuss/Documents/C#/CollectionsPractice/bin/Debug/netcoreapp3.1/CollectionsPractice.deps.json
+/Users/ericnuss/Documents/C#/CollectionsPractice/bin/Debug/netcoreapp3.1/CollectionsPractice.runtimeconfig.json
+/Users/ericnuss/Documents/C#/CollectionsPractice/bin/Debug/netcoreapp3.1/CollectionsPractice.runtimeconfig.dev.json
+/Users/ericnuss/Documents/C#/CollectionsPractice/bin/Debug/netcoreapp3.1/CollectionsPractice.dll
+/Users/ericnuss/Documents/C#/CollectionsPractice/bin/Debug/netcoreapp3.1/CollectionsPractice.pdb
+/Users/ericnuss/Documents/C#/CollectionsPractice/obj/Debug/netcoreapp3.1/CollectionsPractice.csprojAssemblyReference.cache
+/Users/ericnuss/Documents/C#/CollectionsPractice/obj/Debug/netcoreapp3.1/CollectionsPractice.AssemblyInfoInputs.cache
+/Users/ericnuss/Documents/C#/CollectionsPractice/obj/Debug/netcoreapp3.1/CollectionsPractice.AssemblyInfo.cs
+/Users/ericnuss/Documents/C#/CollectionsPractice/obj/Debug/netcoreapp3.1/CollectionsPractice.csproj.CoreCompileInputs.cache
+/Users/ericnuss/Documents/C#/CollectionsPractice/obj/Debug/netcoreapp3.1/CollectionsPractice.dll
+/Users/ericnuss/Documents/C#/CollectionsPractice/obj/Debug/netcoreapp3.1/CollectionsPractice.pdb
+/Users/ericnuss/Documents/C#/CollectionsPractice/obj/Debug/netcoreapp3.1/CollectionsPractice.genruntimeconfig.cache

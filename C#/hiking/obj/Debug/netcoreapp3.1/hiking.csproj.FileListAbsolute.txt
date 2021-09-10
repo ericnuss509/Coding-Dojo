@@ -1,0 +1,7 @@
+/Users/ericnuss/Documents/C#/hiking/obj/Debug/netcoreapp3.1/hiking.csprojAssemblyReference.cache
+/Users/ericnuss/Documents/C#/hiking/obj/Debug/netcoreapp3.1/hiking.AssemblyInfoInputs.cache
+/Users/ericnuss/Documents/C#/hiking/obj/Debug/netcoreapp3.1/hiking.AssemblyInfo.cs
+/Users/ericnuss/Documents/C#/hiking/obj/Debug/netcoreapp3.1/hiking.csproj.CoreCompileInputs.cache
+/Users/ericnuss/Documents/C#/hiking/obj/Debug/netcoreapp3.1/hiking.MvcApplicationPartsAssemblyInfo.cache
+/Users/ericnuss/Documents/C#/hiking/obj/Debug/netcoreapp3.1/hiking.RazorAssemblyInfo.cache
+/Users/ericnuss/Documents/C#/hiking/obj/Debug/netcoreapp3.1/hiking.RazorAssemblyInfo.cs

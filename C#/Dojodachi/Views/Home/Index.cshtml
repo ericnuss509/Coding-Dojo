@@ -1,0 +1,72 @@
+﻿@using Dojodachi.Models
+@model Dachi
+<div class="top"></div>
+<h3>Fullness @Model.Fullness Happiness @Model.Happiness Meals @Model.Meals Energy @Model.Energy</h3>
+</div>
+
+<form action="/restart" method="post">
+    <button type="submit">Restart</button>
+</form>
+
+
+
+<p>Your Dachi is weazin all your grindage, just chill.</p>
+@ViewBag.snacks>
+<div class="buttons"> 
+@{
+    if (Model.Fullness >= 100 && Model.Happiness >= 100 && Model.Energy >=100)
+        {
+            <p>Congratulations!</p>
+            <form action="/restart" method="post">
+                <button>Winner!</button>
+            </form>
+        }
+        else if (Model.Fullness <= 0 || Model.Happiness <= 0)
+        {
+            <p>You aren't fit to have a pet Dachi. </p>
+             <form action="/restart" method="post">
+                <button>Play again loser.</button>
+            </form>
+        }
+        else
+        {
+           
+
+        <form action="/Feed" method="post">
+            <input type="hidden" name="Fullness" value="@Model.Fullness">
+            <input type="hidden" name="Happiness" value="@Model.Happiness">
+            <input type="hidden" name="Meals" value="@Model.Meals">
+            <input type="hidden" name="Energy" value="@Model.Energy ">
+            <button type="submit" value="Feed">Feed</button>
+        </form>
+
+
+
+        <form action="/Play" method="post">
+            <input type="hidden" name="Fullness" value="@Model.Fullness">
+            <input type="hidden" name="Happiness" value="@Model.Happiness">
+            <input type="hidden" name="Meals" value="@Model.Meals">
+            <input type="hidden" name="Energy" value="@Model.Energy ">
+            <button type="submit" value="Play">Play</button>
+        </form>
+
+        <form action="/Work" method="post">
+            <input type="hidden" name="Fullness" value="@Model.Fullness">
+            <input type="hidden" name="Happiness" value="@Model.Happiness">
+            <input type="hidden" name="Meals" value="@Model.Meals">
+            <input type="hidden" name="Energy" value="@Model.Energy">
+            <button type="submit" value="Work">Work</button>
+        </form>
+
+        <form action="/Sleep" method="post">
+            <input type="hidden" name="Fullness" value="@Model.Fullness">
+            <input type="hidden" name="Happiness" value="@Model.Happiness">
+            <input type="hidden" name="Meals" value="@Model.Meals">
+            <input type="hidden" name="Energy" value="@Model.Energy">
+            <button type="submit" value="Sleep">Sleep</button>
+        </form>
+        
+       }
+      
+}
+    

@@ -1,0 +1,12 @@
+/Users/ericnuss/Documents/C#/SecondCSharp/bin/Debug/netcoreapp3.1/SecondCSharp.deps.json
+/Users/ericnuss/Documents/C#/SecondCSharp/bin/Debug/netcoreapp3.1/SecondCSharp.runtimeconfig.json
+/Users/ericnuss/Documents/C#/SecondCSharp/bin/Debug/netcoreapp3.1/SecondCSharp.runtimeconfig.dev.json
+/Users/ericnuss/Documents/C#/SecondCSharp/bin/Debug/netcoreapp3.1/SecondCSharp.dll
+/Users/ericnuss/Documents/C#/SecondCSharp/bin/Debug/netcoreapp3.1/SecondCSharp.pdb
+/Users/ericnuss/Documents/C#/SecondCSharp/obj/Debug/netcoreapp3.1/SecondCSharp.csprojAssemblyReference.cache
+/Users/ericnuss/Documents/C#/SecondCSharp/obj/Debug/netcoreapp3.1/SecondCSharp.AssemblyInfoInputs.cache
+/Users/ericnuss/Documents/C#/SecondCSharp/obj/Debug/netcoreapp3.1/SecondCSharp.AssemblyInfo.cs
+/Users/ericnuss/Documents/C#/SecondCSharp/obj/Debug/netcoreapp3.1/SecondCSharp.csproj.CoreCompileInputs.cache
+/Users/ericnuss/Documents/C#/SecondCSharp/obj/Debug/netcoreapp3.1/SecondCSharp.dll
+/Users/ericnuss/Documents/C#/SecondCSharp/obj/Debug/netcoreapp3.1/SecondCSharp.pdb
+/Users/ericnuss/Documents/C#/SecondCSharp/obj/Debug/netcoreapp3.1/SecondCSharp.genruntimeconfig.cache

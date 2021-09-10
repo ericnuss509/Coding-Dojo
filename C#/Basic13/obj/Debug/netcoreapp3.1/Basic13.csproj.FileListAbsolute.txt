@@ -1,0 +1,12 @@
+/Users/ericnuss/Documents/C#/Basic13/obj/Debug/netcoreapp3.1/Basic13.csprojAssemblyReference.cache
+/Users/ericnuss/Documents/C#/Basic13/obj/Debug/netcoreapp3.1/Basic13.AssemblyInfoInputs.cache
+/Users/ericnuss/Documents/C#/Basic13/obj/Debug/netcoreapp3.1/Basic13.AssemblyInfo.cs
+/Users/ericnuss/Documents/C#/Basic13/obj/Debug/netcoreapp3.1/Basic13.csproj.CoreCompileInputs.cache
+/Users/ericnuss/Documents/C#/Basic13/bin/Debug/netcoreapp3.1/Basic13.deps.json
+/Users/ericnuss/Documents/C#/Basic13/bin/Debug/netcoreapp3.1/Basic13.runtimeconfig.json
+/Users/ericnuss/Documents/C#/Basic13/bin/Debug/netcoreapp3.1/Basic13.runtimeconfig.dev.json
+/Users/ericnuss/Documents/C#/Basic13/bin/Debug/netcoreapp3.1/Basic13.dll
+/Users/ericnuss/Documents/C#/Basic13/bin/Debug/netcoreapp3.1/Basic13.pdb
+/Users/ericnuss/Documents/C#/Basic13/obj/Debug/netcoreapp3.1/Basic13.dll
+/Users/ericnuss/Documents/C#/Basic13/obj/Debug/netcoreapp3.1/Basic13.pdb
+/Users/ericnuss/Documents/C#/Basic13/obj/Debug/netcoreapp3.1/Basic13.genruntimeconfig.cache

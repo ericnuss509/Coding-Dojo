@@ -1,0 +1,13 @@
+@model Dish
+
+    <p>@Model.Chef</p>
+    <p>@Model.Name</p>
+    <p>@Model.Calories</p>
+    <p>@Model.Tastiness</p>
+    <p>@Model.Description</p>
+
+
+<form action="/delete/@Model.DishId" method="post">
+    <button type="submit">Delete</button>
+</form>
+<a href="/edit/@Model.DishId">Edit</a>

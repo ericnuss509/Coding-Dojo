@@ -1,0 +1,54 @@
+<div class="card">
+    <div class="card-header bg-dark text-light">Level 2</div>
+    <div class="card-body">
+        <p>Using the SportsORM, complete all the following queries and show their results on Level2.cshtml.</p>
+        <ol>
+            <li>...all teams in the Atlantic Soccer Conference</li>
+            @foreach (var item in ViewBag.ASC)
+            {
+                <pre>@item.TeamLocation @item.TeamName</pre>
+            }
+            @* <li>...all (current) players on the Boston Penguins (Hint: Boston is the Location, Penguins is the TeamName)</li>
+            @foreach (var item in ViewBag.Bostonplayer)
+            {
+                <pre>@item.firstName @item.LastName</pre>
+            }
+            <li>...all (current) players in the International Collegiate Baseball Conference</li>
+            @foreach (var item in ViewBag.Collebaseball)
+            {
+                <pre>@item.firstName @item.LastName</pre>
+            }
+            <li>...all (current) players in the American Conference of Amateur Football with last name "Lopez"</li>
+            @foreach (var item in ViewBag.Amateur)
+            {
+                <pre>@item.firstName @item.LastName</pre>
+            } *@
+            @* <li>...all football players</li> 
+            @foreach (var item in ViewBag.Football)
+            {
+                <pre>@item.FirstName @item.LastName</pre>
+            }
+            
+            <li>...all teams with a (current) player named "Sophia"</li>
+            @foreach (var item in ViewBag.Sophia)
+            {
+                <pre>@item.firstName @item.LastName</pre>
+            }
+            <li>...all leagues with a (current) player named "Sophia"</li>
+            @foreach (var item in ViewBag.SophiesChoice)
+            {
+                <pre>@item.Leagues @item.firstName @item.LastName</pre>
+            }
+
+            <li>...everyone with the last name "Flores" who DOESN'T (currently) play for the Washington Roughriders</li>
+            <ul>@foreach (var player in ViewBag.Flores)
+            {
+                if (player.CurrentTeam.TeamName != "Roughriders")
+                {
+                    <li>@player.FirstName @player.LastName</li>
+                }
+            }
+            </ul>
+        </ol>
+    </div>
+</div>

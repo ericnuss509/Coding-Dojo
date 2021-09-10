@@ -1,0 +1,17 @@
+<span><p>Hi @ViewBag.User.FirstName!</p></span>
+<a asp-action="Dashboard">Dashboard</a> |
+
+@model Hobby
+<form asp-action="" method="post">
+    <div class="form-group">
+    <label asp-for="HobbyName"></label>
+    <input asp-for="HobbyName" class="form-control">
+    <span asp-validation-for="HobbyName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+    <textarea asp-for="Description">Description</textarea>
+    </div>
+
+    <button>Submit</button>
+</form>

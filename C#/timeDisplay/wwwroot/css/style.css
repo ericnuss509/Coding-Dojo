@@ -1,0 +1,10 @@
+.time_container {
+    margin: 25px auto;
+    padding: 25px 50px;
+    height: 670px;
+    width: 900px;
+    border: solid rgb(250, 228, 228) 20px;
+    overflow-y: auto;
+    background-color: rgb(220, 228, 220);
+    
+}

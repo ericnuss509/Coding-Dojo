@@ -1,0 +1,425 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2513
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Monaco;
+\f3\fnil\fcharset0 AndaleMono;\f4\fnil\fcharset0 HelveticaNeue-Bold;\f5\fnil\fcharset0 HelveticaNeue;
+\f6\fnil\fcharset0 HelveticaNeue-Italic;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red48\green61\blue72;\red255\green255\blue255;
+\red63\green63\blue63;\red184\green14\blue61;\red247\green238\blue241;\red244\green0\blue95;\red11\green13\blue26;
+\red88\green209\blue235;\red157\green101\blue255;\red95\green95\blue95;\red183\green111\blue179;\red23\green23\blue23;
+\red202\green202\blue202;\red67\green192\blue160;\red70\green137\blue204;\red89\green138\blue67;\red212\green214\blue154;
+\red140\green211\blue254;\red194\green126\blue101;\red38\green38\blue38;\red242\green242\blue242;\red213\green213\blue213;
+\red0\green0\blue0;\red0\green0\blue0;\red217\green11\blue5;\red224\green213\blue97;\red212\green213\blue214;
+\red5\green5\blue6;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c24314\c30588\c35294;\cssrgb\c100000\c100000\c100000;
+\cssrgb\c31373\c31373\c31373;\cssrgb\c78039\c14510\c30588;\cssrgb\c97647\c94902\c95686;\cssrgb\c97647\c14902\c44706;\cssrgb\c4314\c6275\c13333;
+\cssrgb\c40000\c85098\c93725;\cssrgb\c68235\c50588\c100000;\cssrgb\c44706\c44706\c44706;\cssrgb\c77255\c52549\c75294;\cssrgb\c11765\c11765\c11765;
+\cssrgb\c83137\c83137\c83137;\cssrgb\c30588\c78824\c69020;\cssrgb\c33725\c61176\c83922;\cssrgb\c41569\c60000\c33333;\cssrgb\c86275\c86275\c66667;
+\cssrgb\c61176\c86275\c99608;\cssrgb\c80784\c56863\c47059;\cssrgb\c20000\c20000\c20000;\cssrgb\c96078\c96078\c96078;\cssrgb\c86667\c86667\c86667;
+\cssrgb\c0\c0\c0;\csgray\c0\c0;\cssrgb\c88946\c14202\c0;\cssrgb\c90196\c85882\c45490;\cssrgb\c86275\c86667\c87059;
+\cssrgb\c1569\c1569\c1961\c7059;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 ll
+\f1\fs22 \cf2 \CocoaLigature0 Creating a project\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+dotnet new console -o NameOfProjectHere\
+Cd into NameOfProjectHere\
+Open in VSCode\
+dotnet run will execute the code\
+\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\
+ASP.NET Core stuff\
+dotnet new web -o ProjectName (cool guy way)\
+\
+dotnet new web \'97-no-https -o ProjectName\
+\
+Open Program.cs and dotnet run in vscode terminal to see hello world on localhost:5000\
+\
+export ASPNETCORE_ENVIRONMENT=Development\
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \expnd0\expndtw0\kerning0
+\CocoaLigature1 After changing any environment variables, you should always restart any terminals you have open (including VS Code).\
+Right click in terminal on VC code and kill terminal \
+dotnet run \
+dotnet watch run\
+\
+\
+\pard\pardeftab720\partightenfactor0
+\cf5 Inside of 
+\f2\fs25\fsmilli12600 \cf6 \cb7 Startup.cs
+\f0\fs28 \cf5 \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs25\fsmilli12600 \cf8 \cb9 public\cf4  \cf8 void\cf4  \cf10 ConfigureServices\cf4 (IServiceCollection services) \{\
+    services.\cf10 AddMvc\cf4 (options \cf8 =>\cf4  options.EnableEndpointRouting \cf8 =\cf4  \cf11 false\cf4 );  \cf12 //add this line    \cf4 \
+\}\
+    \
+\cf8 public\cf4  \cf8 void\cf4  \cf10 Configure\cf4 (IApplicationBuilder app, IWebHostEnvironment env) \{        \
+    \cf12 // some code removed for brevity        \cf4 \
+    app.\cf10 UseMvc\cf4 ();    \cf12 //add this line, replacing the app.UseRouting() and app.UseEndpoints() lines of\cf4 \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f1\fs24 \cf13 \cb14 \
+\
+\
+U\
+sing\cf15  \cf16 System\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 System\cf15 .\cf16 Collections\cf15 .\cf16 Generic\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 System\cf15 .\cf16 Linq\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 System\cf15 .\cf16 Threading\cf15 .\cf16 Tasks\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 Microsoft\cf15 .\cf16 AspNetCore\cf15 .\cf16 Builder\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 Microsoft\cf15 .\cf16 AspNetCore\cf15 .\cf16 Hosting\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 Microsoft\cf15 .\cf16 AspNetCore\cf15 .\cf16 Http\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 Microsoft\cf15 .\cf16 Extensions\cf15 .\cf16 DependencyInjection\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 Microsoft\cf15 .\cf16 Extensions\cf15 .\cf16 Hosting\cf15 ;\cb1 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf17 \cb14 namespace\cf15  \cf16 razorFum\cf15 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf15 \cb14 \{\cb1 \
+\cb14     \cf17 public\cf15  \cf17 class\cf15  \cf16 Startup\cf15 \cb1 \
+\cb14     \{\cb1 \
+\cb14         \cf18 // This method gets called by the runtime. Use this method to add services to the container.\cf15 \cb1 \
+\cb14         \cf18 // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940\cf15 \cb1 \
+\cb14         \cf17 public\cf15  \cf17 void\cf15  \cf19 ConfigureServices\cf15 (\cf16 IServiceCollection\cf15  \cf20 services\cf15 )\cb1 \
+\cb14         \{\cb1 \
+\cb14             \cf20 services\cf15 .\cf19 AddMvc\cf15 (\cf20 options\cf15  => \cf20 options\cf15 .\cf20 EnableEndpointRouting\cf15  = \cf17 false\cf15 );\cb1 \
+\
+\cb14         \}\cb1 \
+\
+\cb14         \cf18 // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.\cf15 \cb1 \
+\cb14         \cf17 public\cf15  \cf17 void\cf15  \cf19 Configure\cf15 (\cf16 IApplicationBuilder\cf15  \cf20 app\cf15 , \cf16 IWebHostEnvironment\cf15  \cf20 env\cf15 )\cb1 \
+\cb14         \{\cb1 \
+\cb14             \cf20 app\cf15 .\cf19 UseMvc\cf15 ();\cb1 \
+\cb14             \cf13 if\cf15  (\cf20 env\cf15 .\cf19 IsDevelopment\cf15 ())\cb1 \
+\cb14             \{\cb1 \
+\cb14                 \cf20 app\cf15 .\cf19 UseDeveloperExceptionPage\cf15 ();\cb1 \
+\cb14             \}\cb1 \
+\cb14             \cb1 \
+\cb14       \cb1 \
+\cb14         \}\cb1 \
+\cb14     \}\cb1 \
+\cb14 \}\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \
+\pard\pardeftab720\partightenfactor0
+
+\f1\fs22 \cf2 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\
+\
+App.UseMvc(); needs to be above the if statement.\
+Delete lines 29-37 in Startup.cs\
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+Control c to get back to project\
+\
+Make a Controllers folder\
+Make a HomeController.cs file in Controllers folder.\
+Make a Views folder\
+Make a Home sub-folder.\
+Inside the Home sub-folder make the Index.cshtml file.\
+\
+In the HomeController.cs file add\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\fs24 \cf13 \cb14 \expnd0\expndtw0\kerning0
+\CocoaLigature1 using\cf15  \cf16 Microsoft\cf15 .\cf16 AspNetCore\cf15 .\cf16 Mvc\cf15 ;\cb1 \
+using System;\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf17 \cb14 namespace\cf15  \cf16 ProjectName\cf15 .\cf16 Controllers\cf15 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf15 \cb14 \{\cb1 \
+\cb14    \cf17 public\cf15  \cf17 class\cf15  \cf16 HomeController\cf15  : \cf16 Controller\cf15 \cb1 \
+\cb14     \{\cb1 \
+\cb14         [\cf16 HttpGet\cf15 (\cf21 ""\cf15 )]\cb1 \
+\cb14         \cf17 public\cf15   \cf16 ViewResult\cf15  \cf19 Index\cf15 ()\cb1 \
+\cb14         \{\cb1 \
+\cb14         \cf13 return\cf15  \cf19 View\cf15 ();\cb1 \
+\cb14         \}\cb1 \
+\cb14     \cb1 \
+\cb14     \}\cb1 \
+\
+\cb14    \cb1 \
+\cb14 \}\cb1 \
+\
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf2 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\
+\
+\
+Dotnet watch run \
+\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85\'85.\
+\pard\pardeftab720\partightenfactor0
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+dotnet new mvc -o NameOfProjectHere (cool guy way)\
+dotnet new mvc -o \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\fs24 \cf13 \cb14 \expnd0\expndtw0\kerning0
+\CocoaLigature1 using\cf15  \cf16 System\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 System\cf15 .\cf16 Collections\cf15 .\cf16 Generic\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 System\cf15 .\cf16 Linq\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 System\cf15 .\cf16 Threading\cf15 .\cf16 Tasks\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 Microsoft\cf15 .\cf16 AspNetCore\cf15 .\cf16 Builder\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 Microsoft\cf15 .\cf16 AspNetCore\cf15 .\cf16 Hosting\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 Microsoft\cf15 .\cf16 Extensions\cf15 .\cf16 Configuration\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 Microsoft\cf15 .\cf16 Extensions\cf15 .\cf16 DependencyInjection\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 Microsoft\cf15 .\cf16 Extensions\cf15 .\cf16 Hosting\cf15 ;\cb1 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf17 \cb14 namespace\cf15  \cf16 modelfun\cf15 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf15 \cb14 \{\cb1 \
+\cb14     \cf17 public\cf15  \cf17 class\cf15  \cf16 Startup\cf15 \cb1 \
+\cb14     \{\cb1 \
+\cb14         \cf17 public\cf15  \cf19 Startup\cf15 (\cf16 IConfiguration\cf15  \cf20 configuration\cf15 )\cb1 \
+\cb14         \{\cb1 \
+\cb14             \cf20 Configuration\cf15  = \cf20 configuration\cf15 ;\cb1 \
+\cb14         \}\cb1 \
+\
+\cb14         \cf17 public\cf15  \cf16 IConfiguration\cf15  \cf20 Configuration\cf15  \{ \cf17 get\cf15 ; \}\cb1 \
+\
+\cb14         \cf18 // This method gets called by the runtime. Use this method to add services to the container.\cf15 \cb1 \
+\cb14         \cf17 public\cf15  \cf17 void\cf15  \cf19 ConfigureServices\cf15 (\cf16 IServiceCollection\cf15  \cf20 services\cf15 )\cb1 \
+\cb14         \{\cb1 \
+\cb14             \cf18 // services.AddControllersWithViews();\cf15 \cb1 \
+\cb14             \cf20 services\cf15 .\cf19 AddMvc\cf15 (\cf20 options\cf15  => \cf20 options\cf15 .\cf20 EnableEndpointRouting\cf15  = \cf17 false\cf15 );\cb1 \
+\cb14         \}\cb1 \
+\
+\cb14         \cf18 // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.\cf15 \cb1 \
+\cb14         \cf17 public\cf15  \cf17 void\cf15  \cf19 Configure\cf15 (\cf16 IApplicationBuilder\cf15  \cf20 app\cf15 , \cf16 IWebHostEnvironment\cf15  \cf20 env\cf15 )\cb1 \
+\cb14         \{\cb1 \
+\cb14             \cf13 if\cf15  (\cf20 env\cf15 .\cf19 IsDevelopment\cf15 ())\cb1 \
+\cb14             \{\cb1 \
+\cb14                 \cf20 app\cf15 .\cf19 UseDeveloperExceptionPage\cf15 ();\cb1 \
+\cb14             \}\cb1 \
+\cb14             \cf13 else\cf15 \cb1 \
+\cb14             \{\cb1 \
+\cb14                 \cf20 app\cf15 .\cf19 UseExceptionHandler\cf15 (\cf21 "/Home/Error"\cf15 );\cb1 \
+\cb14             \}\cb1 \
+\cb14             \cf20 app\cf15 .\cf19 UseStaticFiles\cf15 ();\cb1 \
+\cb14             \cf20 app\cf15 .\cf19 UseMvc\cf15 ();\cb1 \
+\
+\cb14             \cf18 // app.UseRouting();\cf15 \cb1 \
+\
+\cb14             \cf18 // app.UseAuthorization();\cf15 \cb1 \
+\
+\cb14             \cf18 // app.UseEndpoints(endpoints =>\cf15 \cb1 \
+\cb14             \cf18 // \{\cf15 \cb1 \
+\cb14             \cf18 //     endpoints.MapControllerRoute(\cf15 \cb1 \
+\cb14             \cf18 //         name: "default",\cf15 \cb1 \
+\cb14             \cf18 //         pattern: "\{controller=Home\}/\{action=Index\}/\{id?\}");\cf15 \cb1 \
+\cb14             \cf18 // \});\cf15 \cb1 \
+\cb14         \}\cb1 \
+\cb14     \}\cb1 \
+\cb14 \}\cb1 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 \cf2 \kerning1\expnd0\expndtw0 \CocoaLigature0 Login and reg have log in and reg made for test\
+Crud e lishious demo isa good example for the test and there\'92s video demo\
+Wedding planning assignment is the best example of test.\'92\
+\
+ \
+\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs48 EF\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 Dotnet new mvc \'97-no-https -o project name\
+Open in vscode. do a dotnet watch run. Then control c to run the following code. 
+\fs48 \
+\pard\pardeftab720\partightenfactor0
+
+\f3\fs24 \cf22 \cb23 \expnd0\expndtw0\kerning0
+\CocoaLigature1 dotnet add package Pomelo.EntityFrameworkCore.MySql --version 3.1.1\
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 3.1.5
+\f1\fs48 \cf2 \cb1 \kerning1\expnd0\expndtw0 \CocoaLigature0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\fs22 export ASPNETCORE_ENVIRONMENT=Development\
+\
+Set up you models \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamarb200 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth10489\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf24 \clbrdrl\brdrs\brdrw20\brdrcf24 \clbrdrb\brdrs\brdrw20\brdrcf24 \clbrdrr\brdrs\brdrw20\brdrcf24 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth3280\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf24 \clbrdrl\brdrs\brdrw20\brdrcf24 \clbrdrb\brdrs\brdrw20\brdrcf24 \clbrdrr\brdrs\brdrw20\brdrcf24 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 \expnd0\expndtw0\kerning0
+\CocoaLigature1 Models/Monster.cs\cf5 \cb1 \cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf5 \cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamarb200 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clmgf \clvertalt \clshdrawnil \clwWidth10489\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf24 \clbrdrl\brdrs\brdrw20\brdrcf24 \clbrdrb\brdrs\brdrw20\brdrcf24 \clbrdrr\brdrs\brdrw20\brdrcf24 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx4320
+\clmrg \clvertalt \clshdrawnil \clwWidth10489\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf24 \clbrdrl\brdrs\brdrw20\brdrcf24 \clbrdrb\brdrs\brdrw20\brdrcf24 \clbrdrr\brdrs\brdrw20\brdrcf24 \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+
+\f2\fs25\fsmilli12600 \cf4 \cb9 using System;\
+using System.ComponentModel.DataAnnotations;\
+namespace Monsters.Models\
+\{\
+    \cf8 public\cf4  \cf8 class\cf4  Monster\
+    \{\
+        [Key]\
+        \cf8 public\cf4  \cf8 int\cf4  MonsterId \{ get; set; \}\
+        \cf8 public\cf4  \cf8 string\cf4  Name \{ get; set; \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf8 public\cf4  \cf8 int\cf4  Height \{ get; set; \}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf8 public\cf4  \cf8 string\cf4  Description \{ get; set; \}\
+        \cf8 public\cf4  DateTime CreatedAt \{ get; set; \} \cf8 =\cf4  DateTime.Now;\
+        \cf8 public\cf4  DateTime UpdatedAt \{ get; set; \} \cf8 =\cf4  DateTime.Now;\
+    \}\
+\}\
+\
+\cf25 \cb26 Then set up the Context Class\cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf3 \cb4 Models/MyContext.cs\cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs25\fsmilli12600 \cf4 \cb9 using Microsoft.EntityFrameworkCore;\
+namespace Monster.Models\
+\{ \
+    \cf12 // the MyContext class representing a session with our MySQL \cf4 \
+    \cf12 // database allowing us to query for or save data\cf4 \
+    \cf8 public\cf4  \cf8 class\cf4  MyContext : DbContext \
+    \{ \
+        \cf8 public\cf4  \cf10 MyContext\cf4 (DbContextOptions options) : \cf10 base\cf4 (options) \{ \}\
+        \cf12 // the "Monsters" table name will come from the DbSet variable name\cf4 \
+        \cf8 public\cf4  DbSet\cf8 <\cf4 Monster\cf8 >\cf4  Monsters \{ get; set; \}\
+    \}\
+\}\
+\pard\pardeftab720\partightenfactor0
+\cf25 \cb26 Then set up the app settings.json\
+Change the database= to the project name (noted in \cf27 red)\cf25 \
+\pard\pardeftab720\partightenfactor0
+\cf4 \cb9 \{\
+  \cf28 "Logging"\cf4 : \{\
+    \cf28 "LogLevel"\cf4 : \{\
+      \cf28 "Default"\cf4 : \cf28 "Information"\cf4 ,\
+      \cf28 "Microsoft"\cf4 : \cf28 "Warning"\cf4 ,\
+      \cf28 "Microsoft.Hosting.Lifetime"\cf4 : \cf28 "Information"\cf4 \
+    \}\
+  \},\
+  \cf28 "AllowedHosts"\cf4 : \cf28 "*"\cf4 ,\
+    \cf28 "DBInfo"\cf4 :\
+    \{\
+        \cf28 "Name"\cf4 : \cf28 "MySQLconnect"\cf4 ,\
+        \cf28 "ConnectionString"\cf4 : \cf28 "server=localhost;userid=root;password=root;port=3306;database=\cf27 ProjecNameHere\cf28 b;SslMode=None"\cf4 \
+    \}\
+\}\
+\pard\pardeftab720\partightenfactor0
+\cf25 \cb26 Then set up the startup.cs change your namespace.\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f1\fs24 \cf13 \cb14 using\cf15  \cf16 System\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 System\cf15 .\cf16 Collections\cf15 .\cf16 Generic\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 System\cf15 .\cf16 Linq\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 System\cf15 .\cf16 Threading\cf15 .\cf16 Tasks\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 Microsoft\cf15 .\cf16 AspNetCore\cf15 .\cf16 Builder\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 Microsoft\cf15 .\cf16 AspNetCore\cf15 .\cf16 Hosting\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 Microsoft\cf15 .\cf16 Extensions\cf15 .\cf16 Configuration\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 Microsoft\cf15 .\cf16 Extensions\cf15 .\cf16 DependencyInjection\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 Microsoft\cf15 .\cf16 Extensions\cf15 .\cf16 Hosting\cf15 ;\cb1 \
+\cf13 \cb14 using\cf15  \cf16 login\cf15 .\cf16 Models\cf15 ;     ********\cb1 \
+\cf13 \cb14 using\cf15  \cf16 Microsoft\cf15 .\cf16 EntityFrameworkCore\cf15 ;\cb1 \
+\
+\
+\
+\cf17 \cb14 namespace\cf15  \cf16 login  ***********\cf15 \cb1 \
+\cb14 \{ \cb1 \
+\cb14     \cf17 public\cf15  \cf17 class\cf15  \cf16 Startup\cf15 \cb1 \
+\cb14     \{\cb1 \
+\cb14         \cf17 public\cf15  \cf19 Startup\cf15  (\cf16 IConfiguration\cf15  \cf20 configuration\cf15 )\cb1 \
+\cb14         \{\cb1 \
+\cb14             \cf20 Configuration\cf15  = \cf20 configuration\cf15 ;\cb1 \
+\cb14         \}\cb1 \
+\cb14         \cf17 public\cf15  \cf16 IConfiguration\cf15  \cf20 Configuration\cf15  \{ \cf17 get\cf15 ; \}\cb1 \
+\cb14         \cf17 public\cf15  \cf17 void\cf15  \cf19 ConfigureServices\cf15  (\cf16 IServiceCollection\cf15  \cf20 services\cf15 )\cb1 \
+\cb14         \{\cb1 \
+\cb14             \cf20 services\cf15 .\cf19 AddSession\cf15 ();\cb1 \
+\cb14             \cf20 services\cf15 .\cf19 AddDbContext\cf15 <\cf16 MyContext\cf15 >(\cf20 options\cf15  => \cf20 options\cf15 .\cf19 UseMySql\cf15  (\cf20 Configuration\cf15 [\cf21 "DBInfo:ConnectionString"\cf15 ]));\cb1 \
+\cb14             \cf20 services\cf15 .\cf19 AddMvc\cf15 (\cf20 options\cf15  => \cf20 options\cf15 .\cf20 EnableEndpointRouting\cf15  = \cf17 false\cf15 );\cb1 \
+\cb14         \}\cb1 \
+\cb14         \cf17 public\cf15  \cf17 void\cf15  \cf19 Configure\cf15  (\cf16 IApplicationBuilder\cf15  \cf20 app\cf15 , \cf16 IWebHostEnvironment\cf15  \cf20 env\cf15 )\cb1 \
+\cb14         \{\cb1 \
+\cb14             \cf13 if\cf15  (\cf20 env\cf15 .\cf19 IsDevelopment\cf15 ())\cb1 \
+\cb14             \{\cb1 \
+\cb14                 \cf20 app\cf15 .\cf19 UseDeveloperExceptionPage\cf15 ();\cb1 \
+\cb14             \}\cb1 \
+\cb14             \cf20 app\cf15 .\cf19 UseSession\cf15 ();\cb1 \
+\cb14             \cf20 app\cf15 .\cf19 UseStaticFiles\cf15 ();\cb1 \
+\cb14             \cf20 app\cf15 .\cf19 UseMvc\cf15 ();\cb1 \
+\cb14         \}\cb1 \
+\cb14     \}\cb1 \
+\cb14 \}\cb1 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\fs25\fsmilli12600 \cf25 \cb26 Then set up the Homecontroller \
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f1\fs24 \cf13 \cb14 using\cf15 \cb14  \cf16 \cb14 System\cf15 \cb14 ;\cb1 \
+\cf13 \cb14 using\cf15 \cb14  \cf16 \cb14 System\cf15 \cb14 .\cf16 \cb14 Collections\cf15 \cb14 .\cf16 \cb14 Generic\cf15 \cb14 ;\cb1 \
+\cf13 \cb14 using\cf15 \cb14  \cf16 \cb14 System\cf15 \cb14 .\cf16 \cb14 Diagnostics\cf15 \cb14 ;\cb1 \
+\cf13 \cb14 using\cf15 \cb14  \cf16 \cb14 System\cf15 \cb14 .\cf16 \cb14 Linq\cf15 \cb14 ;\cb1 \
+\cf13 \cb14 using\cf15 \cb14  \cf16 \cb14 System\cf15 \cb14 .\cf16 \cb14 Threading\cf15 \cb14 .\cf16 \cb14 Tasks\cf15 \cb14 ;\cb1 \
+\cf13 \cb14 using\cf15 \cb14  \cf16 \cb14 Microsoft\cf15 \cb14 .\cf16 \cb14 AspNetCore\cf15 \cb14 .\cf16 \cb14 Mvc\cf15 \cb14 ;\cb1 \
+\cf13 \cb14 using\cf15 \cb14  \cf16 \cb14 Microsoft\cf15 \cb14 .\cf16 \cb14 Extensions\cf15 \cb14 .\cf16 \cb14 Logging\cf15 \cb14 ;\cb1 \
+\cf13 \cb14 using\cf15 \cb14  \cf16 \cb14 crud\cf15 \cb14 .\cf16 \cb14 Models\cf15 \cb14 ;\cb1 \
+\cf13 \cb14 using\cf15 \cb14  \cf16 \cb14 Microsoft\cf15 \cb14 .\cf16 \cb14 EntityFrameworkCore\cf15 \cb14 ;\cb1 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+\cf18 \cb14 // Other using statements\cf15 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf17 \cb14 namespace\cf15 \cb14  \cf16 \cb14 crud\cf15 \cb14 .\cf16 \cb14 Controllers\cf15 \cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf15 \cb14 \{\cb1 \
+\cb14     \cf17 \cb14 public\cf15 \cb14  \cf17 \cb14 class\cf15 \cb14  \cf16 \cb14 HomeController\cf15 \cb14  : \cf16 \cb14 Controller\cf15 \cb1 \
+\cb14     \{\cb1 \
+\cb14         \cf17 \cb14 private\cf15 \cb14  \cf16 \cb14 MyContext\cf15 \cb14  _context;\cb1 \
+\
+\cb14         \cf18 \cb14 // here we can "inject" our context service into the constructor\cf15 \cb1 \
+\cb14         \cf17 \cb14 public\cf15 \cb14  \cf19 \cb14 HomeController\cf15 \cb14 (\cf16 \cb14 MyContext\cf15 \cb14  \cf20 \cb14 context\cf15 \cb14 )\cb1 \
+\cb14         \{\cb1 \
+\cb14             \cf20 \cb14 _context\cf15 \cb14  = \cf20 \cb14 context\cf15 \cb14 ;\cb1 \
+\cb14         \}\cb1 \
+\
+\cb14         [\cf16 \cb14 HttpGet\cf15 \cb14 "")]\cb1 \
+\cb14         \cf17 \cb14 public\cf15 \cb14  \cf16 \cb14 IActionResult\cf15 \cb14  \cf19 \cb14 Index\cf15 \cb14 ()\cb1 \
+\cb14         \{\cb1 \
+\cb14             \cf16 \cb14 List\cf15 \cb14 <\cf16 \cb14 Dish\cf15 \cb14 > \cf20 \cb14 Dishes\cf15 \cb14  = \cf20 \cb14 _context\cf15 \cb14 .\cf20 \cb14 Dishes\cf15 \cb14 .\cf19 \cb14 ToList\cf15 \cb14 ();\cb1 \
+\cb14             \cb1 \
+\cb14             \cf13 \cb14 return\cf15 \cb14  \cf19 \cb14 View\cf15 \cb14 ();\cb1 \
+\cb14         \}\cb1 \
+\cb14     \}\cb1 \
+\cb14 \}\
+\pard\pardeftab720\partightenfactor0
+
+\f3 \cf22 \cb23 dotnet ef migrations add FirstMigration\
+dotnet ef database update\
+\
+\
+\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f4\b\fs32 \cf29 \cb30 IMPORTANT
+\f5\b0  Whenever you have a page with a form, you will need 
+\f6\i at least
+\f5\i0  2 actions: - an action to show the page with the form - an action to process the form submission
+\f1\fs24 \cf15 \cb1 \
+Redirect after }
