@@ -24,6 +24,15 @@ const NewPost = (props) => {
             type="text"
             />
         </div>
+
+        <div>
+            <label>Title: </label>
+            <input onChange={(e) => {
+                setTitle(e.target.value);
+            }}
+            type="text"
+            />
+        </div>
     </form>
 };
 
