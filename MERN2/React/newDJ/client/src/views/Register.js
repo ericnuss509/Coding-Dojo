@@ -47,10 +47,10 @@ const Register = () => {
             {/* <Avatar {...stringAvatar('Kent Dodds')} />
             <Avatar {...stringAvatar('Jed Watson')} />
             <Avatar {...stringAvatar('Tim Neutkens')} /> */}
-            <h1>Register</h1>
+            <h1>Contact</h1>
             <form onSubmit={register}>
                 <div className="form-group">
-                    <label>Username</label> 
+                    <label>Full Name</label> 
                     <input type="text" className="form-control" name="username" onChange={changehandler}/>
                     {errors.username? <p className= "text-danger">{errors.username.message}</p>:""}
                 </div>
@@ -61,7 +61,7 @@ const Register = () => {
                 </div>
                 <div className="form-group">
                     <label>Password</label> 
-                    <input type="password" className="form-control" name="password" onChange={changehandler}/>
+                    <input type="" className="form-control" name="password" onChange={changehandler}/>
                     {errors.password? <p className= "text-danger">{errors.password.message}</p>:""}
                 </div>
                 <div className="form-group">
