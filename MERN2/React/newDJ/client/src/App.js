@@ -5,18 +5,26 @@ import Home from "./views/Home.js";
 import About from "./views/About.js";
 import Services from "./views/Services.js";
 import Register from "./views/Register.js";
-// import { makeStyles } from '@material-ui/core/styles';
+import Button from '@material-ui/core/Button';
+// import 'fontsource-roboto'
 
-// const useStyles = makeStyles((theme)=> ({
-//   root: {
-//     minHeight: '100vh',
-//     backgroundImage: `url(${process.env.PUBLIC_URL + '/assets/bg.jpg'})`,
-//   }
-// }));
+
 
 function App() {
   return (
     <div className="App">
+      <header className="App-header">
+        <Button 
+          a href="/register"
+          size = "large"
+          variant ="contained" 
+          color = "secondary">
+            Register for an Event
+        </Button>
+      </header>
+
+
+
       <Router>
         <Home path="/"/>
         <About path="/about"/>
@@ -29,7 +37,3 @@ function App() {
 }
 
 export default App;
-// {
-//   const classes = useStyles();
-//   return <div className={classes.root}></div>
-// }

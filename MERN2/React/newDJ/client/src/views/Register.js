@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import axios from 'axios';
 import {navigate} from '@reach/router';
 import {Avatar, stringAvatar} from '@material-ui/core';
-
+import Button from '@material-ui/core/Button';
 
 
 
@@ -60,18 +60,19 @@ const Register = () => {
                     {errors.email? <p className= "text-danger">{errors.email.message}</p>:""}
                 </div>
                 <div className="form-group">
-                    <label>Password</label> 
-                    <input type="" className="form-control" name="password" onChange={changehandler}/>
+                    <label>Inquire</label> 
+                    <input type="text" className="form-control" name="password" onChange={changehandler}/>
                     {errors.password? <p className= "text-danger">{errors.password.message}</p>:""}
                 </div>
-                <div className="form-group">
-                    <label>Confirm Password</label> 
-                    <input type="password" className="form-control" name="confirm" onChange={changehandler}/>
-                    {errors.confirm? <p className= "text-danger">{errors.confirm.message}</p>:""}
-                </div>
-                <input type="submit" value="Sign up" className="btn btn-primary"/>
-
+                
             </form>
+            <Button 
+                        a href="/"
+                        size = "small"
+                        variant ="contained" 
+                        color = "secondary">
+                        Return to Home
+                    </Button>
         </div>
     );
 };
