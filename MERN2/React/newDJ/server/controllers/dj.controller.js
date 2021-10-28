@@ -1,4 +1,4 @@
-const Dj = require("../models/Dj.model");
+const Dj = require("../models/dj.model");
 
 // Export an object that is full of methods.
 module.exports = {

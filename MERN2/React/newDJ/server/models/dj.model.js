@@ -4,39 +4,26 @@ const mongoose = require("mongoose");
 /* 
 {PATH} will be replaced with the field name, such as "location".
 */
-const DjSchema = new mongoose.Schema(
-    {
-        title: {
-            type: String,
-            required: [true, "{PATH} is required."],
-            minlength: [2, "{PATH} must be at least {MINLENGTH} characters."],
-        },
-        description: {
-            type: String,
-            required: [true, "{PATH} is required."],
-            minlength: [2, "{PATH} must be at least {MINLENGTH} characters."],
-        },
-        primaryCategory:{
-            type: String,
-            required: [true, "{PATH} is required."],
-            minlength: [2, "{PATH} must be at least {MINLENGTH} characters."],
-        },
-        secondaryCategory:{
-            type: String,
-            required: [true, "{PATH} is required."],
-            minlength: [2, "{PATH} must be at least {MINLENGTH} characters."],
-        },
-        imgUrl: {
-            type: String,
-            required: [true, "{PATH} is required."],
-        },
-        likeCount: {
-            type: Number,
-            default: 0,
-        },
+const DjSchema = new mongoose.Schema({
+    username: {
+        type: String,
+        required: [true, "Username is required"]
     },
-    { timestamps: true }
-);
+    email: {
+        type: String,
+        required: [true, "Email is required"],
+            message: "Please enter a valid email"
+        
+    },
+    help: {
+        type: String,
+        required: [true, "Message is required"],
+        minlength: [8, "Message must be 8 characters or longer"]
+    }
+
+}, { timestamps: true });
+
+
 
 /* 
 Register schema with mongoose and provide a string to name the collection. This

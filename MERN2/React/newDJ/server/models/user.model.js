@@ -20,6 +20,11 @@ const UserSchema = new mongoose.Schema({
         required: [true, "Password is required"],
         minlength: [8, "Password must be 8 characters or longer"]
     },
+    help: {
+        type: String,
+        required: [true, "Message is required"],
+        minlength: [8, "Message must be 8 characters or longer"]
+    }
 
 }, { timestamps: true });
 
