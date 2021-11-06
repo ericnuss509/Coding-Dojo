@@ -25,20 +25,63 @@ const NewUser= (props) =>{
             email: email,
             help: help,
         };
-        axios.post('http://localhost:5000/api/djs', newInfo)
-            .then(res=>{
-                console.log(res)
-                if(res.data.errors){
-                    setErrors(res.data.errors)
-                }else{
-                    navigate('/dashboard')
-                }
-            })
-            .catch(err=>{
-                console.log(err)
-            })
+        // axios.post('http://localhost:5000/api/djs', newInfo)
+        //     .then(res=>{
+        //         console.log(res)
+        //         if(res.data.errors){
+        //             setErrors(res.data.errors)
+        //         }else{
+        //             navigate('/dashboard')
+        //         }
+        //     })
+        //     .catch(err=>{
+        //         console.log(err)
+        //     })
 
-    }
+
+        //////////////////////////////////////////////
+
+
+
+    //     const Form = (props) =>{
+    //         const {username, setUsername, email, setEmail, help, setHelp} = props;
+        
+    //         const submitHandler = (e) =>{
+    //             e.preventDefault()
+    //             let usernameArr = [...email]
+    //             usernameArr.push(username)
+    //             setEmail(usernameArr)
+    //     //setting username input back to a blank input.
+    //             setUsername("")
+    //         }
+        
+    //         const changeHandler = (e) =>{
+    //             setUsername(e.target.value)
+    //         }
+    //         return(
+    //             <div>
+    //                 <form onSubmit = {submitHandler}>
+    //                     <label htmlFor="addcolor">Write a color to add to the email</label>
+    //                     <input type="text" name="addcolor" onChange = {changeHandler} value = {color}/>
+    //                     <input type="submit" name="submitHandler"/>
+    //                 </form>
+    //             </div>
+    //         )
+            
+    //     }
+        
+    //     export default Form
+
+
+    // }
+
+
+
+///////////////////////////////////////////////////////
+
+
+
+
     return(
         <div>
     
@@ -46,7 +89,7 @@ const NewUser= (props) =>{
             <Grid>
                 <Paper style={paperStyle}>
                     <form onSubmit={handleNewUser}>
-                        <TextField fullWidth label='username' placeholder="Enter your name" />
+                        <TextField fullWidth label='full name' placeholder="Enter your name" />
                             {errors?.username && (
                                 <p style={{ color: "red" }}>{errors.username.message}</p>
                             )}
@@ -73,7 +116,7 @@ const NewUser= (props) =>{
                             <input type="text" className="form-control" name="password" onChange={changehandler}/>
                             {errors.password? <p className= "text-danger">{errors.password.message}</p>:""}
                         </div> */}
-                        <Button style ={buttonStyle} type='submit' variant='contained' color='primary'>Sign up</Button>
+                        <Button style ={buttonStyle} type='submit' variant='contained' color='primary'>Send it</Button>
                     </form>
                 </Paper>
             </Grid>
