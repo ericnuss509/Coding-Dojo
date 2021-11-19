@@ -8,7 +8,7 @@ const Home = (props) =>{
         
             <div>
                 <Button 
-                    a href="/register"
+                    a href="/contact"
                     size = "large"
                     variant ="contained" 
                     color = "secondary">
@@ -19,7 +19,7 @@ const Home = (props) =>{
 
                 <div><Link to ="/about">About</Link></div>
                 <div><Link to ="/services">Services</Link></div>
-                <div><Link to="/register">Register</Link></div>
+                <div><Link to="/contact">Contact</Link></div>
                 
             </div>
     )
