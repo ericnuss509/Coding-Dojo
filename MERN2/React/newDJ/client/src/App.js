@@ -9,7 +9,7 @@ import Contact from './views/Contact.js';
 // import 'fontsource-roboto'
 
 
-const nodemailer = require('nodemailer');
+
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         <Home path="/"/>
         <About path="/about"/>
         <Services path="/services"/>
-        <Contact1 path="/contact"/>
+        <Contact path="/contact"/>
         
       </Router>
     </div> 
