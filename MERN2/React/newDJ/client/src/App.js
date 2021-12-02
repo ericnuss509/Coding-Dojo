@@ -11,9 +11,13 @@ import Contact from './views/Contact.js';
 
 
 
+
 function App() {
   return (
-    <div className="App">
+  //   <div className="App">
+      <div class="parallax">
+        <div class="parallax__layer parallax__layer--back">
+        <img src="/client/public/river.jpg" width='1500px'/>
 {/*       
       <>
       <Form username = {username} setUsername = {setUsername} help = {help} setHelp = {setHelp}/>
@@ -27,6 +31,7 @@ function App() {
         
       </Router>
     </div> 
+    </div>
   );
 }
 
