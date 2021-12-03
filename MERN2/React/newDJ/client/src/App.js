@@ -6,7 +6,7 @@ import About from "./views/About.js";
 import Services from "./views/Services.js";
 import Button from '@material-ui/core/Button';
 import Contact from './views/Contact.js';
-// import 'fontsource-roboto'
+
 
 
 
@@ -14,15 +14,11 @@ import Contact from './views/Contact.js';
 
 function App() {
   return (
-  //   <div className="App">
-      <div class="parallax">
-        <div class="parallax__layer parallax__layer--back">
-        <img src="/client/public/river.jpg" width='1500px'/>
-{/*       
-      <>
-      <Form username = {username} setUsername = {setUsername} help = {help} setHelp = {setHelp}/>
-    </> */}
+
   
+
+    <div className="bg-image parallax"  style={{ backgroundImage: "url(/river.jpg", height: "100vh", width: "100%", backgroundSize: "cover", position: "" }}>
+
       <Router>
         <Home path="/"/>
         <About path="/about"/>
@@ -31,7 +27,8 @@ function App() {
         
       </Router>
     </div> 
-    </div>
+  
+    
   );
 }
 
