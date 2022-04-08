@@ -4,10 +4,9 @@ import { Router, Link } from '@reach/router';
 
 
 const Home = (props) =>{
-    return(
+        return(
         
-            <div>
-            
+                <div>
                 <h1></h1>
 
                 <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
