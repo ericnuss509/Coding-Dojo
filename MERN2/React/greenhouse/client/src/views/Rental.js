@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
 
 
-const About = (props) =>{
+const Rental = (props) =>{
     return(
         
             <div>
-                <h1>This is the About Page</h1>
+                <h1>Greenhouse Rental Information</h1>
                     <Button 
                         a href="/"
                         size = "small"
@@ -19,4 +19,4 @@ const About = (props) =>{
     )
 }
 
-export default About
+export default Rental
