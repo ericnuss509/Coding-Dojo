@@ -13,10 +13,6 @@ import React, { Component }  from 'react';
 function App() {
   return (
 
-  
-
-    <div className="bg-image parallax"  style={{ backgroundImage: "url(/river.jpg", height: "100vh", width: "100%", backgroundSize: "cover", position: "" }}>
-
       <Router>
         <Home path="/"/>
         <Rental path="/rental"/>
@@ -24,11 +20,8 @@ function App() {
         <Examples path="/examples"/>
         <Build path="build"/>
         <Contact path="/contact"/>
-        
       </Router>
-    </div> 
-  
-    
+      
   );
 }
 
