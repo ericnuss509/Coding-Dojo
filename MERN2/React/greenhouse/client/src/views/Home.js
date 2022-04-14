@@ -5,9 +5,24 @@ import { Router, Link } from '@reach/router';
 
 const Home = (props) =>{
         return(
-                <div className="bg-image parallax"  style={{ backgroundImage: "url(/gh.home.png", height: "100vh", width: "40%", backgroundSize: "cover", display: 'block', margin: "auto"}}>
-        <div>
-                <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+
+        <div className="bg-image parallax"  style={
+                { 
+                backgroundImage: "url(/gh.home.png", 
+                height: "100vh", 
+                width: "100%", 
+                backgroundSize: "contain", 
+                backgroundRepeat: "no-repeat",
+                display: 'block', 
+                // margin: "auto",
+                backgroundAttachment: 'fixed',
+                display: "block",
+                // marginLeft: "auto",
+                // marginRight: "auto",
+                }}>
+
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-primary" style= {{fontFamily: "Courier New", fontSize:"20px"}}>
                         <div class="collapse navbar-collapse" id="navbarNav">
                 
                                 <ul class="navbar-nav">
@@ -49,8 +64,8 @@ const Home = (props) =>{
         
                         </div>
                 </nav>
-        </div>
-        </div>
+        
+                </div>
         )
 }
 

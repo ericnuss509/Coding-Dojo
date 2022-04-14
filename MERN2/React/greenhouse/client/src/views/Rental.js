@@ -16,6 +16,7 @@ const Rental = (props) =>{
                     </Button>
                 
             </div>
+            
     )
 }
 

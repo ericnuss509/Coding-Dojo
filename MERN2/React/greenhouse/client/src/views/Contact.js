@@ -42,8 +42,28 @@ const Contact= (props) =>{
 
 
     return(
+        
         <div>
-    
+    <div className="bg-image parallax"  style={
+                { 
+                backgroundImage: "url(/contact.png", 
+                height: "90vh", 
+                width: "100%", 
+                backgroundSize: "contain", 
+                // backgroundRepeat: "no-repeat",
+                display: 'block', 
+                margin: "auto",
+                backgroundAttachment: 'fixed',
+                display: "block",
+                marginLeft: "auto",
+                marginRight: "auto",
+                }}
+                ></div>
+
+
+
+
+
             <h1>Contact</h1>
             <Grid>
                 <Paper style={paperStyle}>
