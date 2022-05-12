@@ -24,7 +24,16 @@ const Home = (props) =>{
 
                 <nav class="navbar navbar-expand-lg navbar-light bg-primary" style= {{fontFamily: "Courier New", fontSize:"20px"}}>
                         <div class="collapse navbar-collapse" id="navbarNav">
-                
+
+
+                                <ul class="navbar-nav">
+                                <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" >
+                                <Link to ="/about">About</Link></a>
+                                </li>
+                                </ul>
+
+
                                 <ul class="navbar-nav">
                                 <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" >

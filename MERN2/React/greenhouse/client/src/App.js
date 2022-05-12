@@ -7,6 +7,7 @@ import Calendar from "./views/Calendar.js";
 import Contact from './views/Contact.js';
 import Examples from './views/Examples.js';
 import Build from './views/Build.js';
+import About from './views/About.js';
 import React, { Component }  from 'react';
 // import { ParallaxProvider } from 'react-scroll-parallax';
 
@@ -22,6 +23,7 @@ function App() {
         <Examples path="/examples"/>
         <Build path="build"/>
         <Contact path="/contact"/>
+        <About path="/about"/>
       </Router>
 
 

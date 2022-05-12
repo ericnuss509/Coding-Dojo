@@ -5,7 +5,9 @@ const Calendar = (props) =>{
     return(
         
             <div>
-                <h1>This is the Calendar Page</h1>
+                <h1>The Calendar Page is Coming Soon!</h1>
+                <h2>To book the Seattle Greenhouse go to our contact page and send us an email. We will get back to you shortly to help you with your special event.</h2>
+                
                 <Button 
                         a href="/"
                         size = "small"
