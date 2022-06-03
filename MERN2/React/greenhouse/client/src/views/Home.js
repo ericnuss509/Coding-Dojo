@@ -8,10 +8,10 @@ const Home = (props) =>{
 
         <div className="bg-image parallax"  style={
                 { 
-                backgroundImage: "url(/gh.home.png", 
+                backgroundImage: "url(/IMG_5716.jpg", 
                 height: "100vh", 
                 width: "100%", 
-                backgroundSize: "contain", 
+                // backgroundSize: "contain", 
                 backgroundRepeat: "no-repeat",
                 display: 'block', 
                 // margin: "auto",
@@ -22,7 +22,7 @@ const Home = (props) =>{
                 }}>
 
 
-                <nav class="navbar navbar-expand-lg navbar-light bg-primary" style= {{fontFamily: "Courier New", fontSize:"20px"}}>
+                <nav class="navbar navbar-expand-lg navbar-light bg-primary" style= {{fontFamily: "Courier New", fontSize:"20px", backgroundColor: "white"}}>
                         <div class="collapse navbar-collapse" id="navbarNav">
 
 

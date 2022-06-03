@@ -4,7 +4,7 @@ import Button from '@material-ui/core/Button';
 
 const About = (props) =>{
     return(
-        <div className="bg-image parallax"  style={
+        <div className="bg-image parallax" style={
             { 
             backgroundImage: "url(/IMG_5712.jpg", 
             height: "100vh", 
@@ -13,8 +13,6 @@ const About = (props) =>{
             backgroundRepeat: "no-repeat",
             display: 'block', 
             backgroundAttachment: 'fixed',
-            
-            
             }}>
             <div></div>
             <nav class="navbar navbar-expand-lg navbar-light bg-primary" style= {{fontFamily: "Courier New", fontSize:"20px", backgroundColor: "white"}}>
