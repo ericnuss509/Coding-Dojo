@@ -3,17 +3,20 @@ import Button from '@material-ui/core/Button';
 
 
 const About = (props) =>{
+    // className="bg-image parallax" style={
+        // { 
+        //     backgroundImage: "url(/IMG_5712.jpg", 
+        //     height: "100vh", 
+        //     width: "100%", 
+        //     backgroundSize: "contain", 
+        //     backgroundRepeat: "no-repeat",
+        //     display: 'block', 
+        //     backgroundAttachment: 'fixed',
+        //     }}>
     return(
-        <div className="bg-image parallax" style={
-            { 
-            backgroundImage: "url(/IMG_5712.jpg", 
-            height: "100vh", 
-            width: "100%", 
-            backgroundSize: "contain", 
-            backgroundRepeat: "no-repeat",
-            display: 'block', 
-            backgroundAttachment: 'fixed',
-            }}>
+        <div>
+        <img src="IMG_5708.jpg" alt="" />
+
             <div></div>
             <nav class="navbar navbar-expand-lg navbar-light bg-primary" style= {{fontFamily: "Courier New", fontSize:"20px", backgroundColor: "white"}}>
                 <h1>The About Page</h1>

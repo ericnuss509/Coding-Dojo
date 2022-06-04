@@ -5,31 +5,35 @@ import { Router, Link } from '@reach/router';
 
 const Home = (props) =>{
         return(
+// "bg-image parallax"
+// style={
+        // { 
+        //         backgroundImage: "url(/IMG_5716.jpg", 
+        //         height: "100vh", 
+        //         width: "100%", 
+        //         // backgroundSize: "contain", 
+        //         backgroundRepeat: "no-repeat",
+        //         display: 'block', 
+        //         // margin: "auto",
+        //         backgroundAttachment: 'fixed',
+        //         display: "block",
+        //         // marginLeft: "auto",
+        //         // marginRight: "auto",
+        //         }}
+        <div>
+                <div>
+                        <img src="IMG_5716.jpg" alt=""  />
+                </div>
 
-        <div className="bg-image parallax"  style={
-                { 
-                backgroundImage: "url(/IMG_5716.jpg", 
-                height: "100vh", 
-                width: "100%", 
-                // backgroundSize: "contain", 
-                backgroundRepeat: "no-repeat",
-                display: 'block', 
-                // margin: "auto",
-                backgroundAttachment: 'fixed',
-                display: "block",
-                // marginLeft: "auto",
-                // marginRight: "auto",
-                }}>
-
-
-                <nav class="navbar navbar-expand-lg navbar-light bg-primary" style= {{fontFamily: "Courier New", fontSize:"20px", backgroundColor: "white"}}>
+                <nav class="navbar navbar-expand-lg navbar-light bg-secondary" style= {{fontFamily: "Courier New", fontSize:"20px", backgroundColor: "white"}}>
                         <div class="collapse navbar-collapse" id="navbarNav">
 
 
                                 <ul class="navbar-nav">
                                 <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" >
-                                <Link to ="/about">About</Link></a>
+                                <a class="btn btn-dark text-primary btn-large" aria-current="page"  >
+                                <Link to ="/about">About</Link>
+                                </a>
                                 </li>
                                 </ul>
 
