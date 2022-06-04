@@ -6,7 +6,7 @@ import { Grid, TextField, Paper }  from '@material-ui/core'
 
 
 const paperStyle = { padding: 20, width: 300, margin: "30px auto" }
-const buttonStyle = {margin: "10px auto"}
+const buttonStyle = {margin: "20px auto"}
 
 const Contact= (props) =>{
     const [username, setUserName] = useState("");
@@ -117,39 +117,3 @@ export default Contact
 
 
         //////////////////////////////////////////////
-
-
-
-    //     const Form = (props) =>{
-    //         const {username, setUsername, email, setEmail, help, setHelp} = props;
-        
-    //         const submitHandler = (e) =>{
-    //             e.preventDefault()
-    //             let usernameArr = [...email]
-    //             usernameArr.push(username)
-    //             setEmail(usernameArr)
-    //     //setting username input back to a blank input.
-    //             setUsername("")
-    //         }
-        
-    //         const changeHandler = (e) =>{
-    //             setUsername(e.target.value)
-    //         }
-    //         return(
-    //             <div>
-    //                 <form onSubmit = {submitHandler}>
-    //                     <label htmlFor="addcolor">Write a color to add to the email</label>
-    //                     <input type="text" name="addcolor" onChange = {changeHandler} value = {color}/>
-    //                     <input type="submit" name="submitHandler"/>
-    //                 </form>
-    //             </div>
-    //         )
-            
-    //     }
-        
-    //     export default Form
-    // }
-
-
-
-///////////////////////////////////////////////////////

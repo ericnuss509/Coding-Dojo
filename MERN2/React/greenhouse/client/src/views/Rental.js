@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Button from '@material-ui/core/Button';
+import { Container } from '@material-ui/core';
 
 
 const Rental = (props) =>{
@@ -14,13 +15,15 @@ const Rental = (props) =>{
             backgroundSize: "contain", 
             // backgroundRepeat: "no-repeat", 
             backgroundAttachment: 'fixed'
+            
             }}>
             <div></div>
 
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-primary" style= {{fontFamily: "Courier New", fontSize:"33px", backgroundColor: "white"}}>
+            <nav class="navbar navbar-light" style= {{fontFamily: "Courier New", fontSize:"33px", backgroundColor:"rgb(176,161,147)", opacity:"80%"}}>
                 <h1>Greenhouse Rental Information</h1>
                 <h2>FAQ’s</h2>
+                
                 <li>How much is it to book per hour? 
                     Our regular rate is $100/hr.</li>
                     <li> Do you have a minimum? 
@@ -32,6 +35,7 @@ const Rental = (props) =>{
                     <li>Is there parking? There are ample amounts of free street parking in our neighborhood. Expect to park within a couple blocks of the greenhouse. We also have a back alley way where you can unload and load but not park. </li>
                     <li>
                     Do you have a bathroom? We reserve bathroom use for folks booking 2+ hours at the greenhouse. It’s inside our house so we do our best to limit the back and forth of bathroom use.</li>
+                    
                                 <Button 
                                     a href="/"
                                     size = "small"

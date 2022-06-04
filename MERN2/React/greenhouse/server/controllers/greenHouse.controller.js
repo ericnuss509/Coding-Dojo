@@ -18,8 +18,7 @@ module.exports = {
         // });
         const greenhouse = new greenHouse(req.body);
         console.log(greenhouse.email, "here's the email")
-        // console.log(proccess.env.EMAIL, 'BOOM BITCH')
-        // console.log(proccess.env.PASSWORD, 'BOOM BITCH')
+        
         var transporter = nodemailer.createTransport({
             
             host: "smtp.gmail.com",
