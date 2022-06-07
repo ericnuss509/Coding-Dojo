@@ -5,8 +5,8 @@ import Button from '@material-ui/core/Button';
 import { Grid, TextField, Paper }  from '@material-ui/core'
 
 
-const paperStyle = { padding: 20, width: 300, margin: "30px auto" }
-const buttonStyle = {margin: "20px auto"}
+const paperStyle = { padding: 33, width: 333, margin: "33px auto" }
+const buttonStyle = {margin: "33px auto"}
 
 const Contact= (props) =>{
     const [username, setUserName] = useState("");
@@ -47,7 +47,7 @@ const Contact= (props) =>{
     <div className="bg-image parallax"  style={
                 { 
                 backgroundImage: "url(/contact.png", 
-                height: "90vh", 
+                height: "70vh", 
                 width: "100%", 
                 backgroundSize: "contain", 
                 // backgroundRepeat: "no-repeat",

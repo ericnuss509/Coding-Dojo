@@ -4,9 +4,27 @@
 /* Class section */
 
 .gh{
-    width: 100%;
+    width:100%;
 }
 
 .about{
-    width:100%
+    width:100%;
+}
+.examples{
+    width: 100%;
+    margin-top: 33px;
+    margin-bottom: 33px;
+}
+
+.navbar-nav{
+    border: 5px solid rgb(235, 248, 235);
+    margin: 7px;
+    
+}
+.nav-item{
+        background-color: rgb(253, 248, 242);
+        border: 5px solid rgb(224, 235, 224);
+        padding: 10px;
+        margin: 10px;
+        
 }

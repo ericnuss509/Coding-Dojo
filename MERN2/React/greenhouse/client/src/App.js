@@ -8,12 +8,11 @@ import Contact from './views/Contact.js';
 import Examples from './views/Examples.js';
 import Build from './views/Build.js';
 import About from './views/About.js';
+import FAQs from './views/FAQs.js';
 import React, { Component }  from 'react';
-// import { ParallaxProvider } from 'react-scroll-parallax';
 
 
 function App() {
-
 
   return (
       <Router>
@@ -24,8 +23,8 @@ function App() {
         <Build path="build"/>
         <Contact path="/contact"/>
         <About path="/about"/>
+        <FAQs path="faqs"/>
       </Router>
-
 
   );
 }
