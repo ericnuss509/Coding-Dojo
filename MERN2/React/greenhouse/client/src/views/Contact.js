@@ -66,7 +66,7 @@ const Contact= (props) =>{
 
             <h1>Contact</h1>
             <Grid>
-                <Paper style={paperStyle}>
+                {/* <Paper style={paperStyle}>
                     <form onSubmit={handleContact}>
                         <TextField fullWidth label='full name' placeholder="Enter your name" onChange={(event) => setUserName(event.target.value)} />
                             {errors?.username && (
@@ -79,7 +79,9 @@ const Contact= (props) =>{
                         <TextField fullWidth label='What can we help you with?' placeholder="What can we help you with?" onChange={(event) => setHelp(event.target.value)}/>
                             {errors?.help && (
                                 <p style={{ color: "red" }}>{errors.help.message}</p>
-                            )}
+                            )} */}
+
+
                         {/* <div className="form-group">
                             <label>Full Name</label> 
                             <input type="text" className="form-control" name="username" onChange={changehandler}/>
@@ -95,9 +97,12 @@ const Contact= (props) =>{
                             <input type="text" className="form-control" name="password" onChange={changehandler}/>
                             {errors.password? <p className= "text-danger">{errors.password.message}</p>:""}
                         </div> */}
-                        <Button style ={buttonStyle} type='submit' variant='contained' color='primary'>Send it</Button>
+{/* from here down */}
+
+                        {/* <Button style ={buttonStyle} type='submit' variant='contained' color='primary'>Send it</Button>
                     </form>
-                </Paper>
+                </Paper> */}
+
             </Grid>
                 <Button size = "small"
                             variant ="contained" 
