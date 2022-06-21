@@ -1,14 +1,14 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
-import {navigate, Link} from '@reach/router';
+import { navigate, Link } from '@reach/router';
 import Button from '@material-ui/core/Button';
-import { Grid, TextField, Paper }  from '@material-ui/core'
+import { Grid, TextField, Paper } from '@material-ui/core'
 
 
 const paperStyle = { padding: 33, width: 333, margin: "33px auto" }
-const buttonStyle = {margin: "33px auto"}
+const buttonStyle = { margin: "33px auto" }
 
-const Contact= (props) =>{
+const Contact = (props) => {
     const [username, setUserName] = useState("");
     const [email, setEmail] = useState("");
     const [help, setHelp] = useState("");
@@ -18,7 +18,7 @@ const Contact= (props) =>{
 
 
 
-    const handleContact = (e) =>{
+    const handleContact = (e) => {
         e.preventDefault();
         const newInfo = {
             username,
@@ -28,58 +28,53 @@ const Contact= (props) =>{
         axios.post('http://localhost:8000/api/greenHouse', newInfo, {
             withCredentials: true,
         })
-            .then(res=>{
-            navigate("/dashboard")
-                
+            .then(res => {
+                navigate("/dashboard")
+
             })
-            .catch(err=>{
+            .catch(err => {
                 console.log(err)
             })
-        };
+    };
 
-
-
-
-
-    return(
-        
+    return (
         <div>
-    <div className="bg-image parallax"  style={
-                { 
-                backgroundImage: "url(/contact.png", 
-                height: "70vh", 
-                width: "100%", 
-                backgroundSize: "contain", 
-                // backgroundRepeat: "no-repeat",
-                display: 'block', 
-                margin: "auto",
-                backgroundAttachment: 'fixed',
-                display: "block",
-                marginLeft: "auto",
-                marginRight: "auto",
+            <div className="bg-image parallax" style={
+                {
+                    backgroundImage: "url(/contact.png",
+                    height: "70vh",
+                    width: "100%",
+                    backgroundSize: "contain",
+                    // backgroundRepeat: "no-repeat",
+                    display: 'block',
+                    margin: "auto",
+                    backgroundAttachment: 'fixed',
+                    display: "block",
+                    marginLeft: "auto",
+                    marginRight: "auto",
                 }}
-                ></div>
+            ></div>
 
 
 
 
 
             <h1>Contact</h1>
-            <Grid>
-                {/* <Paper style={paperStyle}>
+            {/* <Grid>
+                <Paper style={paperStyle}>
                     <form onSubmit={handleContact}>
                         <TextField fullWidth label='full name' placeholder="Enter your name" onChange={(event) => setUserName(event.target.value)} />
-                            {errors?.username && (
-                                <p style={{ color: "red" }}>{errors.username.message}</p>
-                            )}
-                        <TextField fullWidth label='email' placeholder="Enter your email" onChange={(event) => setEmail(event.target.value)}/>
-                            {errors?.email && (
-                                <p style={{ color: "red" }}>{errors.email.message}</p>
-                            )}
-                        <TextField fullWidth label='What can we help you with?' placeholder="What can we help you with?" onChange={(event) => setHelp(event.target.value)}/>
-                            {errors?.help && (
-                                <p style={{ color: "red" }}>{errors.help.message}</p>
-                            )} */}
+                        {errors?.username && (
+                            <p style={{ color: "red" }}>{errors.username.message}</p>
+                        )}
+                        <TextField fullWidth label='email' placeholder="Enter your email" onChange={(event) => setEmail(event.target.value)} />
+                        {errors?.email && (
+                            <p style={{ color: "red" }}>{errors.email.message}</p>
+                        )}
+                        <TextField fullWidth label='What can we help you with?' placeholder="What can we help you with?" onChange={(event) => setHelp(event.target.value)} />
+                        {errors?.help && (
+                            <p style={{ color: "red" }}>{errors.help.message}</p>
+                        )} */}
 
 
                         {/* <div className="form-group">
@@ -97,28 +92,20 @@ const Contact= (props) =>{
                             <input type="text" className="form-control" name="password" onChange={changehandler}/>
                             {errors.password? <p className= "text-danger">{errors.password.message}</p>:""}
                         </div> */}
-{/* from here down */}
-
-                        {/* <Button style ={buttonStyle} type='submit' variant='contained' color='primary'>Send it</Button>
+                        {/* <Button style={buttonStyle} type='submit' variant='contained' color='primary'>Send it</Button>
                     </form>
-                </Paper> */}
+                </Paper>
+            </Grid> */}
+            <Button size="small"
+                variant="contained"
+                color="secondary">
 
-            </Grid>
-                <Button size = "small"
-                            variant ="contained" 
-                            color = "secondary">
-                            
-                            <Link to="/">
-                            Return to Home
-                            </Link>
-                </Button>
+                <Link to="/">
+                    Return to Home
+                </Link>
+            </Button>
         </div>
-        );
-    };
+    );
+};
 
 export default Contact
-
-
-
-
-        //////////////////////////////////////////////

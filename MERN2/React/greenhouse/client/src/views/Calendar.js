@@ -102,6 +102,25 @@ import Button from '@material-ui/core/Button';
     var DISCOVERY_DOCS = ["https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest"]
     var SCOPES = "https://www.googleapis.com/auth/calendar.events"
 
+
+
+
+//   return (
+//     <div className="App">
+//       <header className="App-header">
+    //   CODE BLOCK IS IN THE OTHER RETURN BELOW 112 - 114
+       
+//       </header>
+//     </div>
+//   );
+
+
+
+
+
+
+const Calendar = (props) =>{
+
     const handleClick = () => {
         gapi.load('client:auth2', () => {
         console.log('loaded client')
@@ -133,8 +152,8 @@ import Button from '@material-ui/core/Button';
                 'RRULE:FREQ=DAILY;COUNT=2'
             ],
             'attendees': [
-                {'email': 'lpage@example.com'},
-                {'email': 'sbrin@example.com'}
+                {'email': 'erictylernuss@gmail.com'},
+                {'email': 'ericpennyroyalnies@gmail.com'}
             ],
             'reminders': {
             'useDefault': false,
@@ -178,32 +197,15 @@ import Button from '@material-ui/core/Button';
         })
     })
 }
-
-
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-    //   CODE BLOCK IS IN THE OTHER RETURN BELOW 112 - 114
-       
-//       </header>
-//     </div>
-//   );
-
-
-
-
-
-
-const Calendar = (props) =>{
     return(
         
             <div>
                 <h1>The Calendar Page is Coming Soon!</h1>
                 <h2>To book the Seattle Greenhouse go to our contact page and send us an email. We will get back to you shortly to help you with your special event.</h2>
                 <p>Click to add event to Google Calendar</p>
-  <p style={{fontSize: 18}}>Uncomment the get events code to get events</p>
-  <p style={{fontSize: 18}}>Don't forget to add your Client Id and Api key</p>
-  <button style={{width: 100, height: 50}} onClick={handleClick}>Add Event</button>
+                <p style={{fontSize: 18}}>Uncomment the get events code to get events</p>
+                <p style={{fontSize: 18}}>Don't forget to add your Client Id and Api key</p>
+                <button style={{width: 100, height: 50}} onClick={handleClick}>Add Event</button>
 
                 <Button 
                         a href="/"
@@ -212,8 +214,21 @@ const Calendar = (props) =>{
                         color = "secondary">
                         Return to Home
                     </Button>
+
+                    <input type="date" />
+                    <select name="" id=""> 
+                    <option value="">
+                        12:30
+                    </option>
+                    <option value="">
+                        Monday
+                        </option>
+                    </select>
             </div>
     )
 }
+
+
+
 
 export default Calendar

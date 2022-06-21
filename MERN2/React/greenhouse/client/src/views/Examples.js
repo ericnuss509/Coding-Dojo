@@ -16,13 +16,13 @@ const Examples = (props) =>{
                     </h2>
                     
                 <a href="https://www.instagram.com/theseattlegreenhouse/">The Seattle Greenhouse Instagram</a>
-                    <Button 
-                        a href="/"
-                        size = "small"
-                        variant ="contained" 
-                        color = "secondary">
-                        Return to Home
-                    </Button>
+                <Button
+                    a href="/"
+                    size="small"
+                    variant="contained"
+                    color="secondary">
+                    Return to Home
+                </Button>
                     <img className="examples" src="IMG_5711.jpg" alt="" />
             </div>
     )
