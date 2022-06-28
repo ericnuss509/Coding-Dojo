@@ -50,7 +50,10 @@ module.exports = {
                             company: company
                         });
                     })
-                    .catch((err) => res.status(400).json(err));
+                    .catch((err) => {
+                        console.log(err)
+                        res.status(400).json(err)
+                    });
             }
         });
         // module.exports.sendEmail(req, res)
