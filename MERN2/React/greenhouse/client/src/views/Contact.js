@@ -14,10 +14,6 @@ const Contact = (props) => {
     const [help, setHelp] = useState("");
     const [errors, setErrors] = useState({})
 
-
-
-
-
     const handleContact = (e) => {
         e.preventDefault();
         const newInfo = {
@@ -36,66 +32,53 @@ const Contact = (props) => {
             .catch(err => {
                 setErrors(err.resopnse.data.errors)
                 console.log(err)
-            }) 
-            console.log("you have a dot then bug")
-                navigate("/")
+            })
+        console.log("you have a dot then bug")
+        navigate("/")
     };
 
     return (
         <div>
             <div className="bg-image parallax" style={
                 {
-                    backgroundImage: "url(/contact.png",
-                    height: "70vh",
+                    backgroundImage: "url(/IMG_5712.jpg",
+                    height: "80vh",
                     width: "100%",
-                    // backgroundSize: "contain",
-                    // backgroundRepeat: "no-repeat",
-                    // display: 'block',
-                    // margin: "auto",
-                    backgroundAttachment: 'fixed',
-                    // display: "block",
-                    // marginLeft: "auto",
-                    // marginRight: "auto",
                 }}
             ></div>
 
-
-
-
-
             <h1>Contact</h1>
             <Grid>
-                <Paper style={paperStyle}> 
+                <Paper style={paperStyle}>
                     <form onSubmit={handleContact}>
-                    <TextField fullWidth label='full name' placeholder="Enter your name" required={true} onChange={(event) => setUserName(event.target.value)} />
-                    {errors.username ?(
-                            <p style={{color : "red"}}>{errors.username.message}</p>
-                    ) : (
-                        ""
-                    )}
-                    <TextField fullWidth label='email' placeholder="Enter your email" required={true} onChange={(event) => setEmail(event.target.value)} />
-                    {errors.email ?(
+                        <TextField fullWidth label='full name' placeholder="Enter your name" required={true} onChange={(event) => setUserName(event.target.value)} />
+                        {errors.username ? (
+                            <p style={{ color: "red" }}>{errors.username.message}</p>
+                        ) : (
+                            ""
+                        )}
+                        <TextField fullWidth label='email' placeholder="Enter your email" required={true} onChange={(event) => setEmail(event.target.value)} />
+                        {errors.email ? (
                             <p style={{ color: "red" }}>{errors.email.message}</p>
-                    ) : (
-                        ""
-                    )}
-                    <TextField fullWidth label='What can we help you with?' placeholder="What can we help you with?" required={true} onChange={(event) => setHelp(event.target.value)} />
-                   {errors.help ? (
+                        ) : (
+                            ""
+                        )}
+                        <TextField fullWidth label='What can we help you with?' placeholder="What can we help you with?" required={true} onChange={(event) => setHelp(event.target.value)} />
+                        {errors.help ? (
                             <p style={{ color: "red" }}>{errors.help.message}</p>
-                   ) : (
-                       ""
-                    )}  
-
+                        ) : (
+                            ""
+                        )}
 
                         <Button style={buttonStyle} type='submit' variant='contained' color='primary'>Send it</Button>
                     </form>
                 </Paper>
             </Grid>
-            <Button size="small"
+            <Button class="CircleButton"
+                size="small"
                 variant="contained"
-                color="secondary">
-
-                <Link to="/">
+                color="secondary"
+            ><Link to="/">
                     Return to Home
                 </Link>
             </Button>
