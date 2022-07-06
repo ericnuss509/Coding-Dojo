@@ -1,4 +1,4 @@
-// for loops
+// // for loops
 // initializing let i = 0
 // condition i < 5 true or false
 // final expression i++
@@ -53,15 +53,21 @@
 
 //if statements
 
-const age = 25;
+// const age = 25;
 
-if(age > 20){
-    console.log('you are older than 20 years old.');
-}
+// if(age > 20){
+//     console.log('you are older than 20 years old.');
+// }
 
-const ninja =['eric', 'gary', 'nardos'];
+// const ninja =['eric', 'gary', 'nardos'];
 
-if(ninja.length > 4){
-    console.log("lots of ninja");
+// if(ninja.length > 4){
+//     console.log("lots of ninja");
 
-}
+// }
+
+
+//DOM document Object Model
+
+const para = document.querySelector('p');
+console.log(para);
