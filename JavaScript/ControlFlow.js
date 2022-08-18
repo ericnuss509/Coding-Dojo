@@ -69,5 +69,10 @@
 
 //DOM document Object Model
 
-const para = document.querySelector('p');
-console.log(para);
+// const para = document.querySelector('p');
+// console.log(para);
+
+function yeet(){
+    console.log('hello there');
+}
+yeet();
