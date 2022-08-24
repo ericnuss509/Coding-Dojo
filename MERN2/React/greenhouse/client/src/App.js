@@ -9,6 +9,7 @@ import Examples from './views/Examples.js';
 import Build from './views/Build.js';
 import About from './views/About.js';
 import FAQs from './views/FAQs.js';
+import Bio from './views/Bio';
 import React, { Component }  from 'react';
 
 
@@ -126,6 +127,7 @@ function App() {
         <Contact path="/contact"/>
         <About path="/about"/>
         <FAQs path="faqs"/>
+        <Bio path="Bio"/>
       </Router>
 
   );

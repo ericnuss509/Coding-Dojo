@@ -66,6 +66,13 @@ const Home = (props) =>{
                                         <Link to ="/faqs">FAQ</Link></a>
                                         </li>
                                         </ul>
+
+                                        <ul class="navbar-nav">
+                                        <li class="nav-item">
+                                        <a class="btn" aria-current="page" >
+                                        <Link to ="/Bio">Bio</Link></a>
+                                        </li>
+                                        </ul>
                                 </div>
                         </nav>
                                 <div>
