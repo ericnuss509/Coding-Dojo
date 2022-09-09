@@ -78,7 +78,9 @@ const Home = (props) =>{
                                 <div>
                                         <img className="gh" src="IMG_8456.JPG"/>
                                 </div>
-                                <a href="https://www.instagram.com/theseattlegreenhouse/">The Seattle Greenhouse Instagram</a>
+                                        <h1>
+                                                <a href="https://www.instagram.com/theseattlegreenhouse/">The Seattle Greenhouse Instagram</a>
+                                        </h1>
                         </div>
         )
 }

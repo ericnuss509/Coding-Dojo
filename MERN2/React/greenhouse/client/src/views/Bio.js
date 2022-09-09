@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 
 const Bio = (props) => {
     return (
+
         
         <div>
             <nav class="navbar navbar-expand-lg navbar-light Light link" style={{ fontFamily: "Courier New", fontSize: "20px", backgroundColor: "white" }}>
@@ -32,7 +33,6 @@ const Bio = (props) => {
             <img className="align-middle" src="IMG_0925.jpeg" couple/>
     
         </div>
-
 
 
         
