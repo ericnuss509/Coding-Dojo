@@ -70,13 +70,13 @@ const Home = (props) =>{
                                         <ul class="navbar-nav">
                                         <li class="nav-item">
                                         <a class="btn" aria-current="page" >
-                                        <Link to ="/Bio">Bio</Link></a>
+                                        <Link to ="/Bio">In-House Photographer</Link></a>
                                         </li>
                                         </ul>
                                 </div>
                         </nav>
                                 <div>
-                                        <img className="gh" src="IMG_5716.jpg"/>
+                                        <img className="gh" src="IMG_8456.JPG"/>
                                 </div>
                                 <a href="https://www.instagram.com/theseattlegreenhouse/">The Seattle Greenhouse Instagram</a>
                         </div>

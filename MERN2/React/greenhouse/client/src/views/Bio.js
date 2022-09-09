@@ -4,6 +4,7 @@ import Button from '@material-ui/core/Button';
 
 const Bio = (props) => {
     return (
+        
         <div>
             <nav class="navbar navbar-expand-lg navbar-light Light link" style={{ fontFamily: "Courier New", fontSize: "20px", backgroundColor: "white" }}>
             <h1>Bio</h1>
@@ -11,6 +12,8 @@ const Bio = (props) => {
                         You can expect the ritual of a therapeutic check-in and intention setting at the beginning of our session. As well as a clear idea and thoughtful agreement of how we use our film during our shoot. 
                         The woosh of hair, the stillness of hands placed on top of one another like logs of a cabin. I am a detail oriented gal with a lot of joy to share and absolutely love helping others find a new corner of art; to share with their clients, family, or just for themselves. I take pictures for you, of you and with you. I will always make the most of our time together because I can’t help but be heartfelt and efficient! Photography will always be worth it, especially when the memories are captured on film; there is truly nothing like it.🤙🏼
                     </p>
+            
+                    
                 <Button
                     a href="/"
                     size="small"
@@ -19,15 +22,19 @@ const Bio = (props) => {
                     Return to Home
                 </Button>
             </nav>
-            <img className="bio" src="SommerBTS-1.jpeg" alt="" />
-            <div>
-            <img className="bioExamples" src="IMG_0035.JPG" face />
-            <img className="bioExamples" src="IMG_0045.JPG" Hawaii/>
-            <img className="bioExamples" src="IMG_0046.JPG" Hawaii/>
-            
-            </div>
-        </div>
         
+            <img className="align-middle" src="SommerBTS-1.jpeg" me />
+            <img className="align-middle" src="IMG_0035.JPG" face />
+            <img className="align-middle" src="IMG_0045.JPG" Hawaii/>
+            <img className="align-middle" src="IMG_0046.JPG" Hawaii/>
+            <img className="align-middle" src="IMG_0273.jpeg" Fanchesca/>
+            <img className="align-middle" src="IMG_0901.JPG" Holly/>
+            <img className="align-middle" src="IMG_0925.jpeg" couple/>
+    
+        </div>
+
+
+
         
     )
 }
