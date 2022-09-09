@@ -18,18 +18,17 @@ const Bio = (props) => {
                     color="secondary">
                     Return to Home
                 </Button>
-                <Button
-                    a href="/"
-                    size="small"
-                    variant="contained"
-                    color="secondary">
-                    Examples of My Work
-                </Button>
-
-
             </nav>
-            <img className="about" src="SommerBTS-1.jpeg" alt="" />
+            <img className="bio" src="SommerBTS-1.jpeg" alt="" />
+            <div>
+            <img className="bioExamples" src="IMG_0035.JPG" face />
+            <img className="bioExamples" src="IMG_0045.JPG" Hawaii/>
+            <img className="bioExamples" src="IMG_0046.JPG" Hawaii/>
+            
+            </div>
         </div>
+        
+        
     )
 }
 
