@@ -47,3 +47,22 @@
     padding: 0px;
     text-align:center;
 }
+.container{
+    height:250px;
+    background: #bada55;
+    
+}
+.icons{
+    
+    text-align: center;
+    border-radius: 19;
+    
+}
+img[class^=icon] {
+    vertical-align: middle;
+    display: inline-block;
+    height: 100%;
+    margin:0 1em;
+    padding:10px;
+}
+

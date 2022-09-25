@@ -10,7 +10,7 @@ const Home = (props) =>{
                         
 
 
-                        <nav class="navbar navbar-expand-lg navbar-light White link" style= {{backgroundColor:"rgb(252,252,252)", fontFamily: "Courier New", fontSize:"20px"}}>
+                        <nav class="navbar navbar-expand-lg navbar-light White link" style= {{backgroundColor:"rgb(252,252,252)", fontFamily: "Berthside", fontSize:"20px"}}>
                                 <div class="collapse navbar-collapse" id="navbarNav">
 
 

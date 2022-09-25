@@ -6,9 +6,7 @@ const About = (props) => {
     return (
         <div>
 
-
-            <div></div>
-            <nav class="navbar navbar-expand-lg navbar-light Light link" style={{ fontFamily: "Courier New", fontSize: "20px", backgroundColor: "white" }}>
+            <nav class="navbar navbar-expand-lg navbar-light Light link" style={{ fontFamily: "courier new", fontSize: "20px", backgroundColor: "white"}}>
                 <h1>The About Page</h1>
                 <p>Welcome to The Seattle Greenhouse! We are an inclusive event venue which hosts photo/video shoots, elopement’s, birthday parties, and much more.
                     We built our greenhouse by hand using close to 100% reclaimed materials. Inside you’ll find a bathtub, antique couch, ceramic tile wood stove and over 300 plants. It stays a consistent 70 degrees for you and the plants all year round.
@@ -23,7 +21,7 @@ const About = (props) => {
                     Return to Home
                 </Button>
             </nav>
-            <img className="about" src="IMG_5714.jpg" alt="" />
+            <img className="about" src="IMG_8455.jpg" alt="" />
         </div>
     )
 }
