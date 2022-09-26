@@ -10,7 +10,7 @@ const Home = (props) =>{
                         
 
 
-                        <nav class="navbar navbar-expand-lg navbar-light White link" style= {{backgroundColor:"rgb(252,252,252)", fontFamily: "Berthside", fontSize:"20px"}}>
+                        <nav class="navbar navbar-expand-lg navbar-light White link" style= {{backgroundColor:"rgb(242,243,245)", fontFamily: "courier new", fontSize:"20px"}}>
                                 <div class="collapse navbar-collapse" id="navbarNav">
 
 
@@ -78,9 +78,9 @@ const Home = (props) =>{
                                 <div>
                                         <img className="gh" src="IMG_8456.JPG"/>
                                 </div>
-                                        <h1>
+                                        
                                                 <a href="https://www.instagram.com/theseattlegreenhouse/">The Seattle Greenhouse Instagram</a>
-                                        </h1>
+                                        
                         </div>
         )
 }

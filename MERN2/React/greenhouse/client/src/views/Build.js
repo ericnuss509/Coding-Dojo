@@ -13,10 +13,18 @@ const Build = (props) =>{
                 <img className="build" src="foundation.png" alt="" />
                 <img className="build" src="prep.png" alt="" />
                 <img className="build" src="michael.png" alt="" />
-                
-                
                 <img className="build" src="edit.png" alt="" />
-
+                <img className="build" src="eesaPeach.png" alt="" />
+                <img className="build" src="side.png" alt="" />
+                <img className="build" src="dada.png" alt="" />
+                <img className="build" src="doors.png" alt="" />
+                <img className="build" src="painted.png" alt="" />
+                <img className="build" src="front.png" alt="" />
+                <img className="build" src="southwall.png" alt="" />
+                <img className="build" src="white.png" alt="" />
+                <img className="build" src="edit.png" alt="" />
+                <img className="build" src="sidewhite.png" alt="" />
+                <img className="build" src="brush.png" alt="" />
 
 
                 <img className="build" src="tub.png" alt="" />
