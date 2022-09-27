@@ -56,6 +56,7 @@ const Bio = (props) => {
                 <img class="icon40" src="7.jpg "width="60%" alt="icon"/>
                 <img class="icon41" src="8.jpg "width="60%" alt="icon"/>
                 <img class="icon42" src="9.jpg "width="60%" alt="icon"/>
+                <img class="icon43" src="10.JPG "width="60%" alt="icon"/>
 
 
 
