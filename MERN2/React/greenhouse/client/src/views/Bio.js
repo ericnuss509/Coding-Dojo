@@ -27,13 +27,11 @@ const Bio = (props) => {
                 {/* </nav> */}
             
                 <div class="icons">
-                <img class="icon2" src="IMG_0035.JPG "width="60%" alt="icon"/>
-                
                 
                 <img class="icon4" src="IMG_0046.JPG "width="60%" alt="icon"/>
                 <img class="icon5" src="IMG_0273.jpeg "width="60%" alt="icon"/>
-
                 <img class="icon10" src="IMG_0901.JPG "width="60%" alt="icon"/>
+                <img class="icon2" src="IMG_0035.JPG "width="60%" alt="icon"/>
                 <img class="icon13" src="IMG_0978.JPG "width="60%" alt="icon"/>
                 <img class="icon14" src="IMG_0996.JPG "width="60%" alt="icon"/>
                 <img class="icon15" src="IMG_0999.JPG "width="60%" alt="icon"/>
@@ -49,6 +47,16 @@ const Bio = (props) => {
                 <img class="icon30" src="rainbow.jpeg "width="60%" alt="icon"/>
                 <img class="icon31" src="farmer.jpeg "width="60%" alt="icon"/>
                 <img class="icon33" src="band.jpeg "width="60%" alt="icon"/>
+                <img class="icon34" src="1.jpg "width="60%" alt="icon"/>
+                <img class="icon35" src="2.jpg "width="60%" alt="icon"/>
+                <img class="icon36" src="3.jpg "width="60%" alt="icon"/>
+                <img class="icon37" src="4.jpg "width="60%" alt="icon"/>
+                <img class="icon38" src="5.jpg "width="60%" alt="icon"/>
+                <img class="icon39" src="6.jpg "width="60%" alt="icon"/>
+                <img class="icon40" src="7.jpg "width="60%" alt="icon"/>
+                <img class="icon41" src="8.jpg "width="60%" alt="icon"/>
+                <img class="icon42" src="9.jpg "width="60%" alt="icon"/>
+
 
 
 
