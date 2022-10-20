@@ -58,10 +58,17 @@ const Bio = (props) => {
                 <img class="icon42" src="9.jpg "width="60%" alt="icon"/>
                 <img class="icon43" src="10.JPG "width="60%" alt="icon"/>
 
-
+        
 
 
             </div>
+            <Button
+                        a href="/"
+                        size="small"
+                        variant="contained"
+                        color="secondary">
+                        Return to Home
+                    </Button>
             </div>
         
 
